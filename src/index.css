@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: auto 0;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+body{
+  font-family: Rubik Arial, Helvetica, sans-serif;
+}

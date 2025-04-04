@@ -1,0 +1,18 @@
+:root {
+  /* root  colors */
+  --mainColor: #0a4d30;
+  --logoColor1: #d9b23d;
+  --logoColor2: #956520;
+  --textColor1: #d9b23d;
+  --textColor2: #123223;
+  --textColor3: #93a6a7;
+  --textColor4: #fff;
+  --secColor1: #f9f9fa;
+  --secColor2: #fefefc;
+  --secColor3: #0b4d2f;
+  --btnColor :#D96704;
+  --tableColor1 : #EDFAF4;
+  /* root padding And Margin */
+  --mainPadding: 20px;
+  --mainMargin: 20px;
+}

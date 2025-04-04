@@ -1,0 +1,165 @@
+/* ! start Header style */
+body{
+  height: 200vh;
+}
+header .container {
+  display: flex;
+  position:fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 2;
+  height: 10vh;
+  width: 100%;
+  background-color: var(--mainColor);
+  padding: var(--mainPadding);
+}
+
+header .container .logo {
+  transition: all 0.1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    var(--logoColor1),
+    var(--logoColor2)
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 900;
+  padding: var(--mainPadding);
+  width: fit-content;
+  height: fit-content;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+}
+header .container .logo:hover {
+  transform: skew(-15deg);
+  -webkit-transform: skew(-15deg);
+  -moz-transform: skew(-15deg);
+  -ms-transform: skew(-15deg);
+  -o-transform: skew(-15deg);
+}
+header .container .bar {
+  color: var(--textColor4);
+  display: none;
+}
+header .container ul {
+  padding: var(--mainPadding);
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  width: 100%;
+  gap: 5vw;
+}
+header .container ul li {
+  display: flex;
+  width: 100%;
+}
+
+header .container ul li a {
+  position: relative;
+  text-wrap: nowrap;
+  text-decoration: none;
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+}
+
+header .container ul li a span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-left: 5px;
+  color: var(--textColor4);
+}
+header .container ul li:not(:last-child) a span {
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  -o-transition: all .1s linear;
+}
+header .container ul li:not(:last-child) a span:hover {
+  background-image: linear-gradient(    45deg,    var(--logoColor2),    var(--logoColor1)  );
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+header .container ul li a .btn {
+  transition: all 0.1s ease-out;
+  background-color: var(--btnColor);
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+}
+header .container ul li a .btn:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+/*end Header style */
+/* responsive */
+@media (min-width: 320px) and (max-width: 767px),
+  (max-width: 992px) and (orientation: landscape) {
+  header .container .logo {
+    font-size: 0.7rem;
+  }
+  header .container .bar {
+    display: block;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    left: 5%;
+    top: 30%;
+  }
+
+  header .container ul {
+    transition: all 0.8s ease;
+    width: fit-content;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    margin: 0;
+    background-color: var(--header-color);
+    gap: 0;
+  }
+
+  header .container ul li {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: var(--main-padding) 0;
+  }
+
+  header .container ul li a::before {
+    left: 0;
+  }
+
+  header .container ul li a {
+    font-size: 0.6rem;
+  }
+}
