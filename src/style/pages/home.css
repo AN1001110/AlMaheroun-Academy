@@ -104,8 +104,8 @@
   gap: 1vh;
 }
 .home-sec1 .container .main-img img {
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 600px;
   border-radius: 3%;
   -webkit-border-radius: 3%;
   -moz-border-radius: 3%;
