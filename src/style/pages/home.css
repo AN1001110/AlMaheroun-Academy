@@ -1,0 +1,28 @@
+.home-sec1 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.home-sec1 .container .main-img-dec{
+    line-height: 1.8rem;
+}
+.home-sec1 .container .main-img-dec h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color:var(--textColor2);
+
+}
+.home-sec1 .container .main-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-sec1 .container .main-img img{
+    width: 50vw;
+    height: 80vh;
+   
+}

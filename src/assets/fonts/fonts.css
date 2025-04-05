@@ -2,64 +2,9 @@
 
 /* Thin - الوزن 100 */
 @font-face {
-    font-display: optional;
-    font-family: "Rubik";
-    src: url("Rubik-Thin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  /* Light - الوزن 300 */
-  @font-face {
-    font-display: optional;
-    font-family: "Rubik";
-    src: url("Rubik-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  /* Regular - الوزن 400 */
-  @font-face {
-    font-display: optional;
-    font-family: "Rubik";
-    src: url("Rubik-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  /* Medium - الوزن 500 */
-  @font-face {
-    font-display: optional;
-    font-family: "Rubik";
-    src: url("Rubik-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  /* SemiBold - الوزن 600 */
-  @font-face {
-    font-display: optional;
-    font-family: "Rubik";
-    src: url("Rubik-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  /* Bold - الوزن 700 */
-  @font-face {
-    font-display: optional;
-    font-family: "Rubik";
-    src: url("Rubik-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  /* Black - الوزن 900 */
-  @font-face {
-    font-display: optional;
-    font-family: "Rubik";
-    src: url("Rubik-Black.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
-  }
-  
+  font-display: optional;
+  font-family: "Rubik";
+  src: url("./Rubik/Rubik-Thin.ttf") format("truetype");
+  font-style: italic;
+}
+

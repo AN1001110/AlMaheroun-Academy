@@ -1,10 +1,7 @@
 /* ! start Header style */
-body{
-  height: 200vh;
-}
 header .container {
   display: flex;
-  position:fixed;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   top: 0;
@@ -13,6 +10,8 @@ header .container {
   width: 100%;
   background-color: var(--mainColor);
   padding: var(--mainPadding);
+  border-bottom: 2px solid var(--textColor2);
+  box-shadow: 0 0 5px 1px var(--textColor2);
 }
 
 header .container .logo {
@@ -27,7 +26,7 @@ header .container .logo {
   );
   background-clip: text;
   color: transparent;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-style: italic;
   font-weight: 900;
   padding: var(--mainPadding);
@@ -79,32 +78,36 @@ header .container ul li a span {
   color: var(--textColor4);
 }
 header .container ul li:not(:last-child) a span {
-  transition: all .1s linear;
-  -webkit-transition: all .1s linear;
-  -moz-transition: all .1s linear;
-  -ms-transition: all .1s linear;
-  -o-transition: all .1s linear;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
 }
 header .container ul li:not(:last-child) a span:hover {
-  background-image: linear-gradient(    45deg,    var(--logoColor2),    var(--logoColor1)  );
+  background-image: linear-gradient(
+    45deg,
+    var(--logoColor2),
+    var(--logoColor1)
+  );
   background-clip: text;
   color: transparent;
   font-weight: 800;
-  transform:scale(1.1);
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -ms-transform:scale(1.1);
-  -o-transform:scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 header .container ul li a .btn {
   transition: all 0.1s ease-out;
   background-color: var(--btnColor);
-  padding: 10px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  padding: 10px var(--mainPadding);
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -ms-transition: all 0.1s ease-out;
@@ -122,7 +125,7 @@ header .container ul li a .btn:hover {
 @media (min-width: 320px) and (max-width: 767px),
   (max-width: 992px) and (orientation: landscape) {
   header .container .logo {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
   header .container .bar {
     display: block;
@@ -135,31 +138,36 @@ header .container ul li a .btn:hover {
 
   header .container ul {
     transition: all 0.8s ease;
-    width: fit-content;
+    width: 30%;
     padding: 0;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
     position: absolute;
-    top: 75%;
+    top: 103%;
     left: 0;
     margin: 0;
-    background-color: var(--header-color);
+    background-color: var(--mainColor);
     gap: 0;
+    border-bottom: 2px solid var(--textColor2);
+  box-shadow: 0 0 5px 1px var(--textColor2);
   }
 
   header .container ul li {
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: var(--main-padding) 0;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: calc(10px + var(--mainPadding));
+  }
+  header .container ul li:not(:last-child) {
+    border-bottom: 2px solid var(--logoColor2);
   }
 
-  header .container ul li a::before {
-    left: 0;
-  }
-
-  header .container ul li a {
-    font-size: 0.6rem;
+  header .container ul li a span {
+    font-size: 0.7rem;
   }
 }
