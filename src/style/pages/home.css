@@ -36,6 +36,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--textColor4);
+  padding: var(--mainPadding);
 }
 .home-sec1 .container .main-img-dec div {
   width: 50%;
