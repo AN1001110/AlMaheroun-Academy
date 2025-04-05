@@ -73,9 +73,9 @@ header .container ul li a {
 header .container ul li a span {
   display: block;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: 5px;
-  color: var(--textColor4);
+  color: var(--textColor5);
 }
 header .container ul li:not(:last-child) a span {
   transition: all 0.1s linear;
@@ -92,7 +92,6 @@ header .container ul li:not(:last-child) a span:hover {
   );
   background-clip: text;
   color: transparent;
-  font-weight: 800;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -151,7 +150,7 @@ header .container ul li a .btn:hover {
     background-color: var(--mainColor);
     gap: 0;
     border-bottom: 2px solid var(--textColor2);
-  box-shadow: 0 0 5px 1px var(--textColor2);
+    box-shadow: 0 0 5px 1px var(--textColor2);
   }
 
   header .container ul li {

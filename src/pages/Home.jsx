@@ -12,9 +12,7 @@ export default function Home() {
         <div className="container">
           <div className="main-img-dec">
             <h1>
-             
-                تعلم القرآن <span>بإتقان </span>
-            
+              تعلم القرآن <span>بإتقان </span>
             </h1>
             <p>
               انضم إلى أكاديمية الماهرون لتحفيظ القرآن الكريم وتعلم التجويد على
