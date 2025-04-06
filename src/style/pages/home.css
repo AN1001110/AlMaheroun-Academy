@@ -1,8 +1,9 @@
+/* sec1 */
 .home-sec1 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 75vh;
   gap: 10vw;
 }
 
@@ -62,11 +63,11 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border: 2px solid var(--mainColor);
-  transition: all .1s linear;
-  -webkit-transition: all .1s linear;
-  -moz-transition: all .1s linear;
-  -ms-transition: all .1s linear;
-  -o-transition: all .1s linear;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
 }
 .home-sec1 .container .main-img-dec div a:last-child {
   background-image: linear-gradient(
@@ -77,29 +78,26 @@
   background-clip: text;
   color: transparent;
   background-color: var(--textColor5);
-  border: 2px solid var(--logoColor2) ;
+  border: 2px solid var(--logoColor2);
 }
-.home-sec1 .container .main-img-dec div a:hover ,.home-sec1 .container .main-img-dec div a:last-child:hover  {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+.home-sec1 .container .main-img-dec div a:hover,
+.home-sec1 .container .main-img-dec div a:last-child:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .home-sec1 .container .main-img-dec div a:last-child:hover {
-    color: var(--textColor5);
-    background-clip: border-box;
-
+  color: var(--textColor5);
+  background-clip: border-box;
 }
 .home-sec1 .container .main-img {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.home-sec1 .container .main-img {
-  width: 100%;
+  width: fit-content;
   height: 100%;
   gap: 1vh;
 }
@@ -112,7 +110,59 @@
   -ms-border-radius: 3%;
   -o-border-radius: 3%;
 }
+.home-sec1 .container .main-img img::selection {
+  background-color: transparent;
+}
 .home-sec1 .container .main-img a {
   color: var(--mainColor);
   font-weight: 600;
+}
+
+/* sec2 */
+.home-sec2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secColor1);
+  height: fit-content;
+  padding: 50px var(--mainPadding);
+  gap: 5vh;
+}
+.home-sec2 .container .sec2-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.home-sec2 .container .sec2-title h2 {
+  font-size: 1.8rem;
+  background-image: linear-gradient(
+    45deg,
+    var(--textColor2),
+    var(--textColor3)
+  );
+  background-clip: text;
+  color: transparent;
+  text-wrap: nowrap;
+}
+.home-sec2 .container .sec2-title p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--textColor4);
+}
+
+.home-sec2 .container .services {
+  width: 70%;
+  height: fit-content;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  gap: 40px;
+
 }

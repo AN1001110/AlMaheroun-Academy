@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: Amiri, Rubik ,Arial, Helvetica, sans-serif;
+  padding-top: 10vh;
+  background-color: var(--bodyColor);
+}
+body::selection{
+  background-color: var(--logoColor1);
+  color: var(--textColor5);
+}
 .container {
   margin: auto 0;
   padding: var(--mainPadding);
@@ -10,8 +19,4 @@
 a {
   text-decoration: none;
   color: initial;
-}
-body {
-  font-family: Amiri, Rubik ,Arial, Helvetica, sans-serif;
-  padding-top: 10vh;
 }
