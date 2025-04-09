@@ -1,5 +1,5 @@
 .services .service-card {
-    
+  transition: all 0.3s ease-out;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -15,7 +15,21 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  box-shadow: 0 0 1px 1px var(--textColor2);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
 }
+.services .service-card:hover {
+  box-shadow: 0 0 5px 1px var(--textColor2);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
 .services .service-card .icon {
   font-size: 1.8rem;
   color: var(--textColor3);
@@ -33,7 +47,9 @@
   text-wrap: nowrap;
 }
 .services .service-card p {
+
   font-size: 0.8rem;
   font-weight: 600;
+
   color: var(--textColor4);
 }

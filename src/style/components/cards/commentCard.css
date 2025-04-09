@@ -1,0 +1,57 @@
+.comment-card {
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  background-color: var(--bodyColor);
+  gap: 10%;
+  padding: var(--mainPadding);
+  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 1px 1px var(--textColor2);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.comment-card:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    box-shadow: 0 0 5px 0 var(--mainColor);
+}
+
+.comment-card .icon {
+  font-size: 2.4rem;
+  color: var(--textColor3);
+  margin-bottom: 10px;
+}
+
+.comment-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-image: linear-gradient(
+    45deg,
+    var(--textColor2),
+    var(--textColor3)
+  );
+  background-clip: text;
+  color: transparent;
+  text-wrap: nowrap;
+  margin-bottom: 20px;
+}
+.comment-card p {
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--textColor4);
+}

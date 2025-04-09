@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../style/components/servicesCard.css"
+import "../../style/components/cards/servicesCard.css";
 export default function ServicesCard({ icon, title, desc }) {
   return (
     <div className="service-card">

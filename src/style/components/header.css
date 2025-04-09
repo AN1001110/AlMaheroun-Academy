@@ -11,7 +11,8 @@ header .container {
   background-color: var(--mainColor);
   padding: var(--mainPadding);
   border-bottom: 2px solid var(--textColor2);
-  box-shadow: 0 0 5px 1px var(--textColor2);
+  box-shadow: 0 0 5px 1px var(--textColor3);
+ 
 }
 
 header .container .logo {
@@ -102,11 +103,11 @@ header .container ul li a .btn {
   transition: all 0.1s ease-out;
   background-color: var(--btnColor);
   padding: 10px var(--mainPadding);
-  border-radius: 1vw;
-  -webkit-border-radius: 1vw;
-  -moz-border-radius: 1vw;
-  -ms-border-radius: 1vw;
-  -o-border-radius: 1vw;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -ms-transition: all 0.1s ease-out;

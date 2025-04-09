@@ -3,12 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
-  gap: 10vw;
+  width: 100%;
+  height: 90vh;
+  gap: 5vw;
 }
 
-.home-sec1 .container .main-img-dec {
-  width: 100%;
+.home-sec1 .container .main-img-desc {
+  width: 60%;
   height: 100%;
   line-height: 1.8rem;
   display: flex;
@@ -17,7 +18,7 @@
   flex-direction: column;
   gap: 5vh;
 }
-.home-sec1 .container .main-img-dec h1 {
+.home-sec1 .container .main-img-desc h1 {
   margin: 0;
   padding: var(--mainPadding);
   width: fit-content;
@@ -33,19 +34,19 @@
   color: transparent;
   text-wrap: nowrap;
 }
-.home-sec1 .container .main-img-dec p {
+.home-sec1 .container .main-img-desc p {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--textColor4);
 }
-.home-sec1 .container .main-img-dec div {
+.home-sec1 .container .main-img-desc div {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20%;
+  gap: 10%;
 }
-.home-sec1 .container .main-img-dec div a {
+.home-sec1 .container .main-img-desc div a {
   display: flex;
   align-items: center;
   text-align: center;
@@ -63,13 +64,13 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border: 2px solid var(--mainColor);
-  transition: all 0.1s linear;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
-.home-sec1 .container .main-img-dec div a:last-child {
+.home-sec1 .container .main-img-desc div a:last-child {
   background-image: linear-gradient(
     45deg,
     var(--logoColor1),
@@ -80,15 +81,15 @@
   background-color: var(--textColor5);
   border: 2px solid var(--logoColor2);
 }
-.home-sec1 .container .main-img-dec div a:hover,
-.home-sec1 .container .main-img-dec div a:last-child:hover {
+.home-sec1 .container .main-img-desc div a:hover,
+.home-sec1 .container .main-img-desc div a:last-child:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-.home-sec1 .container .main-img-dec div a:last-child:hover {
+.home-sec1 .container .main-img-desc div a:last-child:hover {
   color: var(--textColor5);
   background-clip: border-box;
 }
@@ -98,28 +99,27 @@
   justify-content: center;
   flex-direction: column;
   width: fit-content;
-  height: 100%;
+  height: fit-content;
   gap: 1vh;
 }
 .home-sec1 .container .main-img img {
-  width: 400px;
-  height: 600px;
+  width: 350px;
+  height: 450px;
   border-radius: 3%;
   -webkit-border-radius: 3%;
   -moz-border-radius: 3%;
   -ms-border-radius: 3%;
   -o-border-radius: 3%;
 }
-.home-sec1 .container .main-img img::selection {
-  background-color: transparent;
-}
+
 .home-sec1 .container .main-img a {
   color: var(--mainColor);
   font-weight: 600;
 }
 
-/* sec2 */
-.home-sec2 .container {
+/* sec2 and sec3 */
+.home-sec2 .container,
+.home-sec3 .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,7 +137,9 @@
   gap: 3vh;
 }
 
-.home-sec2 .container .sec2-title h2 {
+.home-sec2 .container .sec2-title h2,
+.home-sec3 .container h2,
+.home-sec4 .container h2 {
   font-size: 1.8rem;
   background-image: linear-gradient(
     45deg,
@@ -148,6 +150,7 @@
   color: transparent;
   text-wrap: nowrap;
 }
+/* sec2 */
 .home-sec2 .container .sec2-title p {
   font-size: 1rem;
   font-weight: 600;
@@ -164,5 +167,125 @@
   align-content: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, auto));
   gap: 40px;
+}
 
+/* sec3 */
+.home-sec3 .container {
+  background-color: var(--bodyColor);
+}
+.home-sec3 .container .programs {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  gap: 40px;
+}
+/* sec4 */
+.home-sec4 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secColor1);
+  height: fit-content;
+  padding: 50px var(--mainPadding);
+  gap: 5vh;
+}
+
+.home-sec4 .container .comments {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  gap: 40px;
+}
+
+/* sec5 */
+.home-sec5 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--mainColor);
+  color: var(--textColor5);
+  height: fit-content;
+  padding: 50px var(--mainPadding);
+  gap: 5vh;
+}
+
+.home-sec5 .container h2 {
+  font-size: 1.8rem;
+  background-image: linear-gradient(
+    45deg,
+    var(--logoColor1),
+    var(--logoColor2)
+  );
+  background-clip: text;
+  color: transparent;
+  text-wrap: nowrap;
+}
+
+.home-sec5 .container p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--textColor4);
+}
+.home-sec5 .container .sec5-btns {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.home-sec5 .container .sec5-btns a {
+  transition: all 0.3s ease-in-out;
+  color: var(--logoColor1);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: var(--mainPadding) 30px;
+  border: 2px solid var(--logoColor1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.home-sec5 .container .sec5-btns a:first-child {
+  background-image: linear-gradient(
+    45deg,
+    var(--logoColor1),
+    var(--logoColor2)
+  );
+  border: 2px solid var(--logoColor2);
+  color: var(--textColor5);
+}
+
+.home-sec5 .container .sec5-btns a:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.home-sec5 .container .sec5-btns a:last-child:hover {
+  border: 2px solid var(--logoColor2);
+  color: var(--textColor5);
+  background-image: linear-gradient(
+    45deg,
+    var(--logoColor1),
+    var(--logoColor2)
+  );
 }

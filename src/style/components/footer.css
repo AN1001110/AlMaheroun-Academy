@@ -1,0 +1,69 @@
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--mainColor);
+  gap: 5%;
+  color: var(--textColor5);
+  padding-bottom: 0;
+  border-top: 1px solid var(--textColor5);
+}
+footer .container .footer-content {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+
+footer .container .footer-content .footer-list {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .container .footer-content .footer-list h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20%;
+}
+footer .container .footer-content .footer-list ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
+}
+footer .container .footer-content .footer-list ul li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+footer .container .footer-content .footer-list ul li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .container .footer-content .footer-list p {
+  color: var(--textColor4);
+}
+
+footer .container .copy-right {
+  border-top: 1px solid rgb(147, 166, 167, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  color: var(--textColor4);
+  font-size: 1rem;
+}
