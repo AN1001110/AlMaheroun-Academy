@@ -65,11 +65,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link  to = "mailto:01062084964aa@gmail.com">
+                <Link  to = "mailto:almahroun@gmail.com">
                 <p>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </p>
-                <p>test@gmail.com</p>
+                <p>almahroun@gmail.com</p>
                 </Link>
               </li>
               <li>
