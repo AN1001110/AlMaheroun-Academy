@@ -11,12 +11,17 @@ import kidsProgram from "../assets/images/KidsProgram.jpeg";
 import tajweedProgram from "../assets/images/TajweedProgram.jpg";
 import ijazasProgram from "../assets/images/IjazasProgram.jpg";
 //  end imgs
+// components
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ServicesCard from "../components/cards/ServicesCard";
 import ProgramsCard from "../components/cards/ProgramsCard";
 import CommentsCard from "../components/cards/CommentsCard";
+import Footer from "../components/Footer";
 import "../style/pages/home.css";
+// slider library
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   const services = [
     [
@@ -59,7 +64,7 @@ export default function Home() {
     ],
     [
       ijazasProgram,
-      "الإجازات الختلفة",
+      "الإجازات ",
       " برنامج متقدم للحصول على الإجازات في القراءات العشر وغيرها",
       "/programs",
     ],
@@ -78,18 +83,27 @@ export default function Home() {
   const comments = [
     [
       "الطالبة سلمى",
-      "بفضل ربنا اولا ثم الأكاديمية والمعلمة اسراء حفظت كم كويس في وقت قصير ورجعت على الكنت حفظاه الحمدلله",
-    ],
-    [
-      "الطالبة سلمى",
-      "ربنا يجازيكم عنا كل خير انا دخلت بنات عمتي هما بسم الله ما شاء الله خاتمين القرآن وبيراجعوا مع حضرتكم",
+      "بفضل ربنا اولا ثم الأكاديمية والمعلمة اسراء حفظت كم كويس في وقت قصير وراجعت على اللي كنت حفظاه الحمدلله",
     ],
     ["الطالبة شهد", "ممتاز الحمد لله"],
-    ["ولي أمر الطالبة ملك", "كانت جميلة وملك ارتاحت مع المعلمة"],
+    ["الطالبة ملك", "كانت جميلة وملك ارتاحت مع المعلمة"],
     ["الطالبة هدير", "كويس جدا الحمد لله بارك الله فيكم"],
     ["الطالبة سارة", "الحمد لله جيدة جدا ♥"],
     ["الطالبة مايسة", "كان ممتاز جدا جزاكم الله خيرا"],
   ];
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    speed: 6000,
+    autoplaySpeed: 8000,
+    cssEase: "linear",
+    rtl: true,
+    centerPadding: "20px",
+    accessibility: false,
+  };
   const commentsCards = comments.map((service, i) => {
     return <CommentsCard key={i} name={service[0]} comment={service[1]} />;
   });
@@ -135,7 +149,9 @@ export default function Home() {
       <section className="home-sec4">
         <div className="container">
           <h2>أراء الطلاب في الأكاديمية </h2>
-          <div className="comments">{commentsCards}</div>
+          <div className="comments">
+            <Slider {...settings}>{commentsCards}</Slider>
+          </div>
         </div>
       </section>
       <section className="home-sec5">

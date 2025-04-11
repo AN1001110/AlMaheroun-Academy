@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
         <div className="copy-right">
           <pre>
-            جميع الحقوق محفوظة لأكادمية الماهرون لتحفيظ القرآن الكريم{" "}
+            جميع الحقوق محفوظة لأكاديمية الماهرون لتحفيظ القرآن الكريم{" "}
             {rightsDate}©
           </pre>
         </div>

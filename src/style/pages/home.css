@@ -64,11 +64,11 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border: 2px solid var(--mainColor);
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .home-sec1 .container .main-img-desc div a:last-child {
   background-image: linear-gradient(
@@ -158,6 +158,7 @@
 }
 
 .home-sec2 .container .services {
+  margin-top: 40px;
   width: 70%;
   height: fit-content;
   display: grid;
@@ -173,8 +174,10 @@
 .home-sec3 .container {
   background-color: var(--bodyColor);
 }
+
 .home-sec3 .container .programs {
-  width: 100%;
+  margin-top: 40px;
+  width: 90%;
   height: fit-content;
   display: grid;
   justify-items: center;
@@ -196,9 +199,12 @@
   gap: 5vh;
 }
 
-.home-sec4 .container .comments {
+/*
+ .home-sec4 .container .comments {
+  overflow: hidden;
+  margin-top: 40px;
   width: 100%;
-  height: fit-content;
+  height: 350px;
   display: grid;
   justify-items: center;
   text-align: center;
@@ -206,6 +212,16 @@
   align-content: center;
   grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   gap: 40px;
+  } */
+.home-sec4 .container .comments {
+  width: 100%;
+  height: auto; /* ارتفاع الـ Slider */
+  overflow: hidden; /* منع ظهور أي محتوى زائد */
+}
+.slick-initialized .slick-slide div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* sec5 */
@@ -246,7 +262,7 @@
   gap: 10%;
 }
 .home-sec5 .container .sec5-btns a {
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
   color: var(--logoColor1);
   font-size: 1rem;
   font-weight: 600;
@@ -257,10 +273,10 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 .home-sec5 .container .sec5-btns a:first-child {

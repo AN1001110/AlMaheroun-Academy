@@ -1,11 +1,12 @@
 .comment-card {
-  transition: all 0.3s ease-out;
+  transition: var(--transition);
+  margin: 20px 0;
   display: flex;
   align-self: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  width: 250px;
+  width: 220px;
   height: 300px;
   background-color: var(--bodyColor);
   gap: 10%;
@@ -15,11 +16,11 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  box-shadow: 0 0 1px 1px var(--textColor2);
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
+  box-shadow: 0 0 1px 1px var(--textColo r2);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .comment-card:hover{
     transform: scale(1.05);
@@ -55,3 +56,4 @@
   font-weight: 600;
   color: var(--textColor4);
 }
+
