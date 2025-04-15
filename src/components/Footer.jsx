@@ -13,8 +13,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   const rightsDate = new Date().getFullYear();
-  console.log(rightsDate);
-
   return (
     <footer>
       <div className="container">
@@ -65,11 +63,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link  to = "mailto:almahroun@gmail.com">
-                <p>
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </p>
-                <p>almahroun@gmail.com</p>
+                <Link to="mailto:almahroun@gmail.com">
+                  <p>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </p>
+                  <p>almahroun@gmail.com</p>
                 </Link>
               </li>
               <li>
@@ -84,7 +82,10 @@ export default function Footer() {
             <h5>تابعنا</h5>
             <ul>
               <li>
-                <Link to="https://www.facebook.com/share/1JkZPR9p89/" target="_blank">
+                <Link
+                  to="https://www.facebook.com/share/1JkZPR9p89/"
+                  target="_blank"
+                >
                   <p>
                     <FontAwesomeIcon icon={faFacebook} />
                   </p>

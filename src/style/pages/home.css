@@ -103,7 +103,7 @@
   gap: 1vh;
 }
 .home-sec1 .container .main-img img {
-  width: 350px;
+  width: 450px;
   height: 450px;
   border-radius: 3%;
   -webkit-border-radius: 3%;
@@ -199,20 +199,7 @@
   gap: 5vh;
 }
 
-/*
- .home-sec4 .container .comments {
-  overflow: hidden;
-  margin-top: 40px;
-  width: 100%;
-  height: 350px;
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
-  gap: 40px;
-  } */
+
 .home-sec4 .container .comments {
   width: 100%;
   height: auto; /* ارتفاع الـ Slider */
@@ -225,83 +212,7 @@
 }
 
 /* sec5 */
-.home-sec5 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--mainColor);
-  color: var(--textColor5);
-  height: fit-content;
-  padding: 50px var(--mainPadding);
-  gap: 5vh;
+.home-sec5 .container{
+  padding: 0;
 }
 
-.home-sec5 .container h2 {
-  font-size: 1.8rem;
-  background-image: linear-gradient(
-    45deg,
-    var(--logoColor1),
-    var(--logoColor2)
-  );
-  background-clip: text;
-  color: transparent;
-  text-wrap: nowrap;
-}
-
-.home-sec5 .container p {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--textColor4);
-}
-.home-sec5 .container .sec5-btns {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-}
-.home-sec5 .container .sec5-btns a {
-  transition: var(--transition);
-  color: var(--logoColor1);
-  font-size: 1rem;
-  font-weight: 600;
-  padding: var(--mainPadding) 30px;
-  border: 2px solid var(--logoColor1);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-}
-
-.home-sec5 .container .sec5-btns a:first-child {
-  background-image: linear-gradient(
-    45deg,
-    var(--logoColor1),
-    var(--logoColor2)
-  );
-  border: 2px solid var(--logoColor2);
-  color: var(--textColor5);
-}
-
-.home-sec5 .container .sec5-btns a:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-}
-.home-sec5 .container .sec5-btns a:last-child:hover {
-  border: 2px solid var(--logoColor2);
-  color: var(--textColor5);
-  background-image: linear-gradient(
-    45deg,
-    var(--logoColor1),
-    var(--logoColor2)
-  );
-}

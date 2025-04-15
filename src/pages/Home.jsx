@@ -22,6 +22,7 @@ import "../style/pages/home.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Join from "../components/Join";
 export default function Home() {
   const services = [
     [
@@ -97,8 +98,8 @@ export default function Home() {
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 8000,
+    speed: 8000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     rtl: true,
     centerPadding: "20px",
@@ -107,6 +108,7 @@ export default function Home() {
   const commentsCards = comments.map((service, i) => {
     return <CommentsCard key={i} name={service[0]} comment={service[1]} />;
   });
+
   return (
     <>
       <Header />
@@ -156,12 +158,10 @@ export default function Home() {
       </section>
       <section className="home-sec5">
         <div className="container">
-          <h2>ابدأ رحلتك مع القرآن الكريم اليوم</h2>
-          <p>سجل الأن واحصل على جلسة تجريبية مجانية مع معلمينا المتخصصين</p>
-          <div className="sec5-btns">
-            <Link to="/programs">سجل الأن</Link>
-            <Link to="/contact">تواصل معنا</Link>
-          </div>
+          <Join
+            title={"ابدأ رحلتك مع القرآن الكريم اليوم"}
+            desc={"سجل الأن واحصل على جلسة تجريبية مجانية مع معلمينا المتخصصين"}
+          />
         </div>
       </section>
       <Footer />
