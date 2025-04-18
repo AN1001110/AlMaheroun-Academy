@@ -16,7 +16,7 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  box-shadow: 0 0 1px 1px var(--textColo r2);
+  box-shadow: 0 0 1px 1px var(--textColor2);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);

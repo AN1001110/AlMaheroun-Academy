@@ -8,6 +8,7 @@
   --textColor3: #0b8d5d;
   --textColor4: #93a6a7;
   --textColor5: #fff;
+  --textColor6: #000000;
   --secColor1: #f5f5f5;
   --bodyColor: #fdfdf7;
   --secColor3: #0b4d2f;
@@ -15,7 +16,6 @@
   --tableColor1: #edfaf4;
   /* root padding And Margin */
   --mainPadding: 20px;
-  --mainMargin: 20px;
   --border-radius: 10px;
   /*  transition */
   --transition: all 0.3s ease-in-out;

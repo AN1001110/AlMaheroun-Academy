@@ -58,11 +58,11 @@
   height: 80%;
   color: var(--textColor5);
   font-weight: 600;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
   border: 2px solid var(--mainColor);
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -199,7 +199,6 @@
   gap: 5vh;
 }
 
-
 .home-sec4 .container .comments {
   width: 100%;
   height: auto; /* ارتفاع الـ Slider */
@@ -212,7 +211,6 @@
 }
 
 /* sec5 */
-.home-sec5 .container{
+.home-sec5 .container {
   padding: 0;
 }
-

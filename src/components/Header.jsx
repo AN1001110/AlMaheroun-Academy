@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import "../style/components/header.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,29 +48,29 @@ export default function Header() {
             }}
           >
             <li>
-              <Link to="/">
+              <NavLink to="/">
                 <span>الصفحة الرئيسية</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">
+              <NavLink to="/about">
                 <span>عن الأكاديمية</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/programs">
+              <NavLink to="/programs">
                 <span>البرامج</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">
+              <NavLink to="/contact">
                 <span>التواصل</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/programs">
+              <NavLink to="/programs">
                 <span className="btn">ابدأ الأن</span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

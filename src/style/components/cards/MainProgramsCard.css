@@ -1,0 +1,123 @@
+.main-program-card {
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px var(--mainPadding);
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 3px 1px var(--logoColor1);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  background-color: var(--textColor5);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.main-program-card:hover {
+  box-shadow: 0 0 5px 2px var(--logoColor1);
+}
+.main-program-card .card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  height: fit-content;
+}
+.main-program-card .card-title .icon {
+  color: var(--logoColor1);
+  font-size: 1.8rem;
+}
+.main-program-card .card-title h3 {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-image: linear-gradient(
+    45deg,
+    var(--textColor2),
+    var(--textColor3)
+  );
+  background-clip: text;
+  color: transparent;
+  text-wrap: nowrap;
+}
+.main-program-card .card-title h3::after {
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  content: "";
+  background-color: var(--logoColor1);
+  width: 50%;
+  height: 2px;
+}
+
+.main-program-card .card-title p {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--textColor4);
+}
+
+.main-program-card .advantages {
+  display: flex;
+  justify-content: center;
+  padding: var(--mainPadding);
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+.main-program-card .advantages .advantages-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.main-program-card .advantages .advantages-list li {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.main-program-card .advantages .advantages-list li .icon {
+  color: var(--textColor3);
+}
+.main-program-card .advantages .advantages-list li p {
+  color: var(--textColor6);
+}
+
+.main-program-card .advantages a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  padding: 10px var(--mainPadding);
+  background-image: linear-gradient(
+    45deg,
+    var(--textColor2),
+    var(--textColor3)
+  );
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+.main-program-card .advantages a:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}

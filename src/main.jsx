@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router";
 import "./assets/fonts/fonts.css";
 import "./style/assets/normalize.css";
 import "./style/assets/variables.css";
+import "./style/assets/animations.css";
 import "./index.css";
 
 createRoot(document.getElementById("root")).render(

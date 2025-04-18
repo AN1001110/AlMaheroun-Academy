@@ -23,7 +23,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Join from "../components/Join";
+import { useLayoutEffect } from "react";
 export default function Home() {
+  useLayoutEffect(() => {
+    document.title = "AlMaheroun Academy";
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
   const services = [
     [
       faUserGraduate,
@@ -52,22 +57,15 @@ export default function Home() {
 
   const programs = [
     [
-      kidsProgram,
-      "تحفيظ القرآن للأطفال",
-      "برامج مخصصة للأطفال من سن 5 إلى 12 سنة ",
-      "/programs",
-    ],
-    [
-      tajweedProgram,
-      "التجويد",
-      "تعلم أحكام التجويد وتطبيقها بشكل صحيح",
-      "/programs",
-    ],
-    [
       ijazasProgram,
-      "الإجازات ",
-      " برنامج متقدم للحصول على الإجازات في القراءات العشر وغيرها",
-      "/programs",
+      "برنامج الحفظ المكثف",
+      "برنامج متكامل لحفظ القرآن الكريم خلال زمن قصير مع التركيز على التجويد والإتقان",
+    ],
+    [tajweedProgram, "التجويد", "تعلم أحكام التجويد وتطبيقها بشكل صحيح"],
+    [
+      kidsProgram,
+      "برنامج البراعم الصغار",
+      "برامج مخصصة للأطفال من سن 5 إلى 12 سنة ",
     ],
   ];
   const programsCards = programs.map((program, i) => {
@@ -77,7 +75,6 @@ export default function Home() {
         img={program[0]}
         title={program[1]}
         desc={program[2]}
-        link={program[3]}
       />
     );
   });
