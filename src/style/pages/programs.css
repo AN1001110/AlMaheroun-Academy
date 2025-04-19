@@ -8,6 +8,7 @@
   height: 90vh;
   background-image: url("../../assets/images/programsImg.jpg");
   background-size: cover;
+  position: relative;
 }
 .programs-sec1 h1 {
   margin: 0;
@@ -25,13 +26,14 @@
   text-wrap: nowrap;
 }
 .programs-sec1 p {
- 
   font-weight: 500;
   color: var(--textColor4);
 }
 .programs-sec1 .icon {
   position: absolute;
-  bottom: 5vh;
+  
+  bottom: 10vh;
+  left: 50%;
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--textColor4);
