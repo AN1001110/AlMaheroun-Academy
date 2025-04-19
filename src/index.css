@@ -14,7 +14,7 @@ body::selection {
 }
 .container {
   margin: auto 0;
-  padding: var(--mainPadding);
+  padding: 2rem;
 }
 a {
   text-decoration: none;
@@ -23,6 +23,3 @@ a {
 img::selection {
   background-color: transparent;
 }
-
-
-

@@ -69,11 +69,9 @@ export default function Contact() {
     <>
       <Header />
       <section className="contact-sec1">
-        <div className="container">
-          <h1>تواصل معنا</h1>
-          <p>نسعد بتواصلكم وإستفساراتكم في أي وقت</p>
-          <FontAwesomeIcon className="icon arrow" icon={faArrowDownLong} />
-        </div>
+        <h1>تواصل معنا</h1>
+        <p>نسعد بتواصلكم وإستفساراتكم في أي وقت</p>
+        <FontAwesomeIcon className="icon arrow" icon={faArrowDownLong} />
       </section>
       <section className="contact-sec2">
         <div className="container">
@@ -178,13 +176,21 @@ export default function Contact() {
             <div className="contact-fast">
               <h4>تواصل معنا مباشرة</h4>
               <div className="contact-fast-links">
-                <Link to="https://wa.me/201062084964" target="_blank">
+                <Link
+                  className="btn"
+                  to="https://wa.me/201062084964"
+                  target="_blank"
+                >
                   <p>
                     <FontAwesomeIcon icon={faWhatsapp} />
                     واتساب
                   </p>
                 </Link>
-                <Link to="https://t.me/Alshafeiy78" target="_blank">
+                <Link
+                  className="btn"
+                  to="https://t.me/Alshafeiy78"
+                  target="_blank"
+                >
                   <p>
                     <FontAwesomeIcon icon={faTelegram} />
                     تلجرام

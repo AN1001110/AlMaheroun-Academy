@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100%;
   height: 90vh;
-  gap: 5vw;
+  gap: 10%;
 }
 
 .home-sec1 .container .main-img-desc {
@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   gap: 5vh;
 }
 .home-sec1 .container .main-img-desc h1 {
@@ -23,7 +24,6 @@
   padding: var(--mainPadding);
   width: fit-content;
   height: fit-content;
-  font-size: 2.8rem;
   font-weight: 900;
   background-image: linear-gradient(
     45deg,
@@ -32,18 +32,16 @@
   );
   background-clip: text;
   color: transparent;
-  text-wrap: nowrap;
 }
 .home-sec1 .container .main-img-desc p {
-  font-size: 1.2rem;
   font-weight: 500;
   color: var(--textColor4);
 }
 .home-sec1 .container .main-img-desc div {
-  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: fit-content;
   gap: 10%;
 }
 .home-sec1 .container .main-img-desc div a {
@@ -54,8 +52,8 @@
   text-wrap: nowrap;
   background-color: var(--mainColor);
   padding: var(--mainPadding);
-  width: 100%;
-  height: 80%;
+  width: 80%;
+  height: 50%;
   color: var(--textColor5);
   font-weight: 600;
   border-radius: var(--border-radius);
@@ -98,18 +96,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   gap: 1vh;
 }
 .home-sec1 .container .main-img img {
-  width: 450px;
-  height: 450px;
-  border-radius: 3%;
-  -webkit-border-radius: 3%;
-  -moz-border-radius: 3%;
-  -ms-border-radius: 3%;
-  -o-border-radius: 3%;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .home-sec1 .container .main-img a {
@@ -118,13 +115,16 @@
 }
 
 /* sec2 and sec3 */
+.home-sec2,
+.home-sec4 {
+  background-color: var(--secColor1);
+}
 .home-sec2 .container,
 .home-sec3 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--secColor1);
   height: fit-content;
   padding: 50px var(--mainPadding);
   gap: 5vh;
@@ -140,7 +140,6 @@
 .home-sec2 .container .sec2-title h2,
 .home-sec3 .container h2,
 .home-sec4 .container h2 {
-  font-size: 1.8rem;
   background-image: linear-gradient(
     45deg,
     var(--textColor2),
@@ -152,21 +151,20 @@
 }
 /* sec2 */
 .home-sec2 .container .sec2-title p {
-  font-size: 1rem;
   font-weight: 600;
   color: var(--textColor4);
 }
 
 .home-sec2 .container .services {
   margin-top: 40px;
-  width: 70%;
+  width: 100%;
   height: fit-content;
   display: grid;
   justify-items: center;
   text-align: center;
   align-items: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
 
@@ -177,14 +175,13 @@
 
 .home-sec3 .container .programs {
   margin-top: 40px;
-  width: 90%;
-  height: fit-content;
+  width: 100%;
   display: grid;
   justify-items: center;
   text-align: center;
   align-items: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
 /* sec4 */
@@ -204,6 +201,13 @@
   height: auto; /* ارتفاع الـ Slider */
   overflow: hidden; /* منع ظهور أي محتوى زائد */
 }
+.slick-slide {
+  padding: 0 10px; /* إضافة مسافة أفقية بين الشرائح */
+}
+
+.slick-list {
+  margin: 0 -10px; /* تعويض المسافة المضافة لتجنب التمرير الأفقي */
+}
 .slick-initialized .slick-slide div {
   display: flex;
   align-items: center;
@@ -213,4 +217,12 @@
 /* sec5 */
 .home-sec5 .container {
   padding: 0;
+}
+
+/* responsive  */
+@media (max-width: 575.98px) {
+  .home-sec1 .container {
+    flex-direction: column-reverse;
+    height: 105vh;
+  }
 }

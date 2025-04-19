@@ -39,11 +39,11 @@
   gap: 10%;
 }
 .join .join-btns a {
+  text-wrap: nowrap;
   transition: var(--transition);
   color: var(--logoColor1);
-  font-size: 1rem;
   font-weight: 600;
-  padding: var(--mainPadding) 30px;
+  padding: 10px 40px;
   border: 2px solid var(--logoColor1);
   border-radius: var(--border-radius);
   -webkit-border-radius: var(--border-radius);

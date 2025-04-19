@@ -15,11 +15,11 @@ export default function Footer() {
   const rightsDate = new Date().getFullYear();
   return (
     <footer>
-      <div className="container">
+      <div className="footer-container">
         <div className="footer-content">
           <div className="footer-titles"></div>
           <div className="footer-list">
-            <h5>الماهرون</h5>
+            <h6>الماهرون</h6>
             <ul>
               <li>
                 <p>نحو تعليم قرآني متميز</p>
@@ -27,7 +27,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-list">
-            <h5>روابط سريعة</h5>
+            <h6>روابط سريعة</h6>
             <ul>
               <li>
                 <Link to="/">
@@ -52,7 +52,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-list">
-            <h5>تواصل معنا</h5>
+            <h6>تواصل معنا</h6>
             <ul>
               <li>
                 <Link to="https://wa.me/201062084964" target="_blank">
@@ -79,7 +79,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-list">
-            <h5>تابعنا</h5>
+            <h6>تابعنا</h6>
             <ul>
               <li>
                 <Link

@@ -6,8 +6,8 @@ export default function Join({ title, desc }) {
       <h2>{title}</h2>
       <p>{desc}</p>
       <div className="join-btns">
-        <Link to="/programs">سجل الأن</Link>
-        <Link to="/contact">تواصل معنا</Link>
+        <Link className="btn" to="/programs">سجل الأن</Link>
+        <Link className="btn" to="/contact">تواصل معنا</Link>
       </div>
     </div>
   );

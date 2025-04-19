@@ -18,7 +18,7 @@ export default function Header() {
   }, [screenSize, screenOrientation]);
   return (
     <header>
-      <div className="container">
+      <div className="header-container">
         <Link to="/" className="logo">
           الماهرون
         </Link>

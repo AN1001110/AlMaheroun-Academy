@@ -1,6 +1,6 @@
 /* sec1 */
 
-.contact-sec1 .container {
+.contact-sec1  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,12 +11,12 @@
   background-image: url("../../assets/images/contactBackgroundImg.jpg");
   background-size: cover;
 }
-.contact-sec1 .container h1 {
+.contact-sec1  h1 {
   margin: 0;
   padding: var(--mainPadding);
   width: fit-content;
   height: fit-content;
-  font-size: 2.8rem;
+  font-size: 2.75rem;
   font-weight: 900;
   background-image: linear-gradient(
     45deg,
@@ -27,12 +27,12 @@
   color: transparent;
   text-wrap: nowrap;
 }
-.contact-sec1 .container p {
+.contact-sec1  p {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--textColor4);
 }
-.contact-sec1 .container .icon {
+.contact-sec1  .icon {
   position: absolute;
   bottom: 5vh;
   font-size: 1.8rem;
@@ -259,4 +259,14 @@
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+}
+@media (max-width: 575.98px) {
+  .contact-sec2 .container {
+  flex-direction: column;
+  height: 200vh;
+  margin-top: 5vh;
+  }
+  .contact-form {
+  width: 100%;
+  }
 }

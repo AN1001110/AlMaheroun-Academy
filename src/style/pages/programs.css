@@ -1,4 +1,4 @@
-.programs-sec1 .container {
+.programs-sec1  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +9,12 @@
   background-image: url("../../assets/images/programsBackgroundImg.jpg");
   background-size: cover;
 }
-.programs-sec1 .container h1 {
+.programs-sec1  h1 {
   margin: 0;
   padding: var(--mainPadding);
   width: fit-content;
   height: fit-content;
-  font-size: 2.8rem;
+  font-size: 2.75rem;
   font-weight: 900;
   background-image: linear-gradient(
     45deg,
@@ -25,12 +25,12 @@
   color: transparent;
   text-wrap: nowrap;
 }
-.programs-sec1 .container p {
+.programs-sec1  p {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--textColor4);
 }
-.programs-sec1 .container .icon {
+.programs-sec1  .icon {
   position: absolute;
   bottom: 5vh;
   font-size: 1.8rem;
@@ -39,6 +39,9 @@
 }
 
 /* sec2 */
+.programs-sec2 {
+  background-color: var(--secColor1);
+}
 .programs-sec2 .container {
   display: flex;
   justify-content: center;
@@ -46,7 +49,6 @@
   flex-direction: column;
   padding: 40px var(--mainPadding);
   gap: 5vh;
-  background-color: var(--secColor1);
 }
 .programs-sec2 .container h2 {
   font-size: 1.8rem;

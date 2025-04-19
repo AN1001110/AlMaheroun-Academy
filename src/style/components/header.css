@@ -1,5 +1,5 @@
 /* ! start Header style */
-header .container {
+header .header-container {
   display: flex;
   position: fixed;
   justify-content: space-between;
@@ -14,7 +14,7 @@ header .container {
   box-shadow: 0 0 5px 1px var(--textColor3);
 }
 
-header .container .logo {
+header .header-container .logo {
   transition: all 0.1s ease;
   display: flex;
   justify-content: center;
@@ -37,18 +37,18 @@ header .container .logo {
   -ms-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
 }
-header .container .logo:hover {
+header .header-container .logo:hover {
   transform: skew(-15deg);
   -webkit-transform: skew(-15deg);
   -moz-transform: skew(-15deg);
   -ms-transform: skew(-15deg);
   -o-transform: skew(-15deg);
 }
-header .container .bar {
+header .header-container .bar {
   color: var(--textColor4);
   display: none;
 }
-header .container ul {
+header .header-container ul {
   padding: var(--mainPadding);
   display: flex;
   list-style-type: none;
@@ -56,12 +56,12 @@ header .container ul {
   width: 100%;
   gap: 5vw;
 }
-header .container ul li {
+header .header-container ul li {
   display: flex;
   width: 100%;
 }
 
-header .container ul li a {
+header .header-container ul li a {
   position: relative;
   text-wrap: nowrap;
   text-decoration: none;
@@ -70,21 +70,21 @@ header .container ul li a {
   height: fit-content;
 }
 
-header .container ul li a span {
+header .header-container ul li a span {
   display: block;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-left: 5px;
   color: var(--textColor5);
 }
-header .container ul li:not(:last-child) a span {
+header .header-container ul li:not(:last-child) a span {
   transition: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
 }
-header .container ul li:not(:last-child) a span:hover {
+header .header-container ul li:not(:last-child) a span:hover {
   background-image: linear-gradient(
     45deg,
     var(--logoColor2),
@@ -98,7 +98,7 @@ header .container ul li:not(:last-child) a span:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-header .container ul li a .btn {
+header .header-container ul li a .btn {
   transition: all 0.1s ease-out;
   background-color: var(--btnColor);
   padding: 10px var(--mainPadding);
@@ -112,7 +112,7 @@ header .container ul li a .btn {
   -ms-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
 }
-header .container ul li a .btn:hover {
+header .header-container ul li a .btn:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -123,10 +123,10 @@ header .container ul li a .btn:hover {
 /* responsive */
 @media (min-width: 320px) and (max-width: 767px),
   (max-width: 992px) and (orientation: landscape) {
-  header .container .logo {
+  header .header-container .logo {
     font-size: 1.2rem;
   }
-  header .container .bar {
+  header .header-container .bar {
     display: block;
     position: absolute;
     font-size: 1rem;
@@ -135,7 +135,7 @@ header .container ul li a .btn:hover {
     top: 30%;
   }
 
-  header .container ul {
+  header .header-container ul {
     transition: all 0.8s ease;
     width: 30%;
     padding: 0;
@@ -153,7 +153,7 @@ header .container ul li a .btn:hover {
     box-shadow: 0 0 5px 1px var(--textColor2);
   }
 
-  header .container ul li {
+  header .header-container ul li {
     height: 5vh;
     width: 100%;
     display: flex;
@@ -162,11 +162,36 @@ header .container ul li a .btn:hover {
     text-align: center;
     padding: calc(10px + var(--mainPadding));
   }
-  header .container ul li:not(:last-child) {
+  header .header-container ul li:not(:last-child) {
     border-bottom: 2px solid var(--logoColor2);
   }
 
-  header .container ul li a span {
+  header .header-container ul li a span {
     font-size: 0.7rem;
   }
+}
+
+/* الأنماط الأساسية للهواتف الذكية الصغيرة (<576px) */
+
+@media (max-width: 575.95px) {
+}
+
+/* الهواتف الذكية المتوسطة (576px وأكبر) */
+@media (min-width: 576px) {
+}
+
+/* الأجهزة اللوحية (768px وأكبر) */
+@media (min-width: 768px) {
+}
+
+/* أجهزة الكمبيوتر المحمولة (992px وأكبر) */
+@media (min-width: 992px) {
+}
+
+/* أجهزة الكمبيوتر المكتبية (1200px وأكبر) */
+@media (min-width: 1200px) {
+}
+
+/* الشاشات الكبيرة جدًا (1400px وأكبر) */
+@media (min-width: 1400px) {
 }

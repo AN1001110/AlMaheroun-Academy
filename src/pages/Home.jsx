@@ -9,7 +9,7 @@ import {
 import mainImg from "../assets/images/main.jpg";
 import kidsProgram from "../assets/images/KidsProgram.jpeg";
 import tajweedProgram from "../assets/images/TajweedProgram.jpg";
-import ijazasProgram from "../assets/images/IjazasProgram.jpg";
+import IntensiveMemorization from "../assets/images/IntensiveMemorization.jpeg";
 //  end imgs
 // components
 import Header from "../components/Header";
@@ -22,6 +22,7 @@ import "../style/pages/home.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// slider end
 import Join from "../components/Join";
 import { useLayoutEffect } from "react";
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
 
   const programs = [
     [
-      ijazasProgram,
+      IntensiveMemorization,
       "برنامج الحفظ المكثف",
       "برنامج متكامل لحفظ القرآن الكريم خلال زمن قصير مع التركيز على التجويد والإتقان",
     ],
@@ -90,17 +91,39 @@ export default function Home() {
     ["الطالبة مايسة", "كان ممتاز جدا جزاكم الله خيرا"],
   ];
   const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplay: true,
-    speed: 8000,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    rtl: true,
-    centerPadding: "20px",
-    accessibility: false,
+    dots: true, // عرض النقاط أسفل الـ Slider
+    infinite: true, // التمرير اللانهائي
+    slidesToShow: 4, // عدد الشرائح المعروضة في الشاشات الكبيرة
+    slidesToScroll: 1, // عدد الشرائح التي يتم تمريرها
+    autoplay: true, // التمرير التلقائي
+    speed: 1500, // سرعة التمرير
+    autoplaySpeed: 3000, // سرعة التمرير التلقائي
+    cssEase: "ease-in-out", // تأثير التمرير
+    rtl: true, // دعم الاتجاه من اليمين لليسار
+    
+    responsive: [
+      {
+        breakpoint: 1024, // عند عرض الشاشة أقل من 1024px
+        settings: {
+          slidesToShow: 4, // عرض 3 شرائح
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // عند عرض الشاشة أقل من 768px
+        settings: {
+          slidesToShow: 3, // عرض شريحتين
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576, // عند عرض الشاشة أقل من 576px
+        settings: {
+          slidesToShow: 2, // عرض شريحة واحدة
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const commentsCards = comments.map((service, i) => {
     return <CommentsCard key={i} name={service[0]} comment={service[1]} />;
@@ -118,12 +141,16 @@ export default function Home() {
               يد نخبة من المعلمين المتخصصين
             </p>
             <div>
-              <Link to="/programs">ابدأ رحلتك</Link>
-              <Link to="about">تعرف علينا</Link>
+              <Link to="/programs" className="btn">
+                ابدأ رحلتك
+              </Link>
+              <Link to="about" className="btn">
+                تعرف علينا
+              </Link>
             </div>
           </div>
           <div className="main-img">
-            <img src={mainImg} alt="Not Found" />
+            <img src={mainImg} className="hero-image" alt="Not Found" />
             <Link to="https://ar.pngtree.com/freebackground/a-close-up-of-the-holy-book-al-quran-on-a-green-prayer-rug-islamic-photo-concept_15480182.html?sol=downref&id=bef">
               المصدر
             </Link>
@@ -149,17 +176,15 @@ export default function Home() {
         <div className="container">
           <h2>أراء الطلاب في الأكاديمية </h2>
           <div className="comments">
-            <Slider {...settings}>{commentsCards}</Slider>
+            <Slider { ...settings}>{commentsCards}</Slider>
           </div>
         </div>
       </section>
       <section className="home-sec5">
-        <div className="container">
-          <Join
-            title={"ابدأ رحلتك مع القرآن الكريم اليوم"}
-            desc={"سجل الأن واحصل على جلسة تجريبية مجانية مع معلمينا المتخصصين"}
-          />
-        </div>
+        <Join
+          title={"ابدأ رحلتك مع القرآن الكريم اليوم"}
+          desc={"سجل الأن واحصل على جلسة تجريبية مجانية مع معلمينا المتخصصين"}
+        />
       </section>
       <Footer />
     </>

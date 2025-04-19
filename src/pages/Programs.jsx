@@ -15,7 +15,7 @@ import Header from "../components/Header";
 import "../style/pages/programs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MainProgramsCard from "../components/cards/MainProgramsCard";
-import {  useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 
 export default function Programs() {
   useLayoutEffect(() => {
@@ -111,11 +111,9 @@ export default function Programs() {
     <>
       <Header />
       <section className="programs-sec1">
-        <div className="container">
-          <h1>مميزات الدراسة معنا</h1>
-          <p>نسعد بتواصلكم وإستفساراتكم في أي وقت</p>
-          <FontAwesomeIcon className="icon arrow" icon={faArrowDownLong} />
-        </div>
+        <h1>مميزات الدراسة معنا</h1>
+        <p>نسعد بتواصلكم وإستفساراتكم في أي وقت</p>
+        <FontAwesomeIcon className="icon arrow" icon={faArrowDownLong} />
       </section>
       <section className="programs-sec3">
         <div className="container"></div>

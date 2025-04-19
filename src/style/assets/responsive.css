@@ -1,0 +1,201 @@
+/* الأنماط الأساسية للشاشات الكبيرة (≥1400px) */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* التخطيط */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* النصوص */
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2.25rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.75rem;
+}
+p {
+  font-size: 1.5rem;
+}
+
+/* الصورة الرئيسية */
+.hero-image {
+  width: 100%;
+  height: 80vh;
+}
+
+/* أجهزة الكمبيوتر المكتبية (<1400px) */
+@media (max-width: 1399.98px) {
+  .container {
+    max-width: 1200px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.75rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .hero-image {
+    height: 70vh;
+  }
+}
+
+/* أجهزة الكمبيوتر المحمولة (<1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1.15rem;
+  }
+  .hero-image {
+    height: 60vh;
+  }
+}
+
+/* الأجهزة اللوحية (<992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-size: 1.15rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .hero-image {
+    height: 50vh;
+  }
+}
+
+/* الهواتف الذكية المتوسطة (<768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+    padding: 0.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+  h6 {
+    font-size: 1.05rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .hero-image {
+    height: 40vh;
+  }
+}
+
+/* الهواتف الذكية الصغيرة (<576px) */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding: 1.2rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .hero-image {
+    height: 30vh;
+  }
+  .btn {
+    font-size: 0.5rem;
+  }
+}

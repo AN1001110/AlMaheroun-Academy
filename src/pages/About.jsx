@@ -48,7 +48,6 @@ export default function About() {
   return (
     <>
       <Header />
-
       <section className="about-sec1">
         <div className="container">
           <div className="about-desc">
@@ -66,7 +65,7 @@ export default function About() {
             </p>
           </div>
           <div className="main-img">
-            <img src={aboutImg} alt="Not Found" />
+            <img src={aboutImg} className="hero-image" alt="Not Found" />
           </div>
         </div>
       </section>
