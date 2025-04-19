@@ -1,4 +1,4 @@
-.programs-sec1  {
+.programs-sec1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   background-image: url("../../assets/images/programsBackgroundImg.jpg");
   background-size: cover;
 }
-.programs-sec1  h1 {
+.programs-sec1 h1 {
   margin: 0;
   padding: var(--mainPadding);
   width: fit-content;
@@ -25,12 +25,12 @@
   color: transparent;
   text-wrap: nowrap;
 }
-.programs-sec1  p {
+.programs-sec1 p {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--textColor4);
 }
-.programs-sec1  .icon {
+.programs-sec1 .icon {
   position: absolute;
   bottom: 5vh;
   font-size: 1.8rem;
