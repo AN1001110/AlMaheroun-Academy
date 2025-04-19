@@ -224,5 +224,7 @@
   .home-sec1 .container {
     flex-direction: column-reverse;
     height: 105vh;
+    gap: 0;
+   
   }
 }
