@@ -58,7 +58,6 @@
 
 .main-program-card .card-title p {
   margin-top: 15px;
-  font-size: 0.8rem;
   font-weight: 600;
   color: var(--textColor4);
 }
@@ -84,7 +83,6 @@
   display: flex;
   gap: 5px;
   width: 100%;
-  font-size: 0.8rem;
 }
 .main-program-card .advantages .advantages-list li .icon {
   color: var(--textColor3);
