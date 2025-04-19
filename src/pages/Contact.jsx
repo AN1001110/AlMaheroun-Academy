@@ -75,74 +75,73 @@ export default function Contact() {
       </section>
       <section className="contact-sec2">
         <div className="container">
-          <div className="contact-form-container">
-            {/* form start */}
-            <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-              <div className="form-group">
-                <label htmlFor="name">الاسم الكامل</label>
-                <input
-                  value={form.name}
-                  onChange={handelForm}
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  autoComplete="name"
-                />
-              </div>
-              {form.name < 2 && submitted && (
-                <p className="err"> ادخل اسم صالح يتكون من حرفين أو أكثر</p>
-              )}
-              <div className="form-group">
-                <label htmlFor="email">البريد الإلكتروني</label>
-                <input
-                  value={form.email}
-                  onChange={handelForm}
-                  type="email"
-                  id="email"
-                  name="email"
-                  autoComplete="email"
-                />
-              </div>
+          {/* form start */}
+          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+            <div className="form-group">
+              <label htmlFor="name">الاسم الكامل</label>
+              <input
+                value={form.name}
+                onChange={handelForm}
+                type="text"
+                id="name"
+                name="name"
+                required
+                autoComplete="name"
+              />
+            </div>
+            {form.name < 2 && submitted && (
+              <p className="err"> ادخل اسم صالح يتكون من حرفين أو أكثر</p>
+            )}
+            <div className="form-group">
+              <label htmlFor="email">البريد الإلكتروني</label>
+              <input
+                value={form.email}
+                onChange={handelForm}
+                type="email"
+                id="email"
+                name="email"
+                autoComplete="email"
+              />
+            </div>
 
-              <div className="form-group">
-                <label htmlFor="phone">رقم الجوال</label>
-                <input
-                  value={form.phone}
-                  onChange={handelForm}
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  required
-                  autoComplete="tel"
-                />
-                {form.phone.length !== 11 && submitted && (
-                  <p className="err"> ادخل رقم صالح يتكون من 11 رقم</p>
-                )}
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">الرسالة</label>
-                <textarea
-                  value={form.message}
-                  onChange={handelForm}
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-                {form.message < 1 && submitted && (
-                  <p className="err">ادخل رسالة صالح تتكون من حرف أو أكثر</p>
-                )}
-              </div>
-              <button
-                onClick={sentMessage}
-                type="submit"
-                className="submit-button"
-              >
-                أرسل الرسالة
-              </button>
-            </form>
-          </div>
+            <div className="form-group">
+              <label htmlFor="phone">رقم الجوال</label>
+              <input
+                value={form.phone}
+                onChange={handelForm}
+                type="number"
+                id="phone"
+                name="phone"
+                required
+                autoComplete="tel"
+              />
+              {form.phone.length !== 11 && submitted && (
+                <p className="err"> ادخل رقم صالح يتكون من 11 رقم</p>
+              )}
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">الرسالة</label>
+              <textarea
+                value={form.message}
+                onChange={handelForm}
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              {form.message < 1 && submitted && (
+                <p className="err">ادخل رسالة صالح تتكون من حرف أو أكثر</p>
+              )}
+            </div>
+            <button
+              onClick={sentMessage}
+              type="submit"
+              className="submit-button"
+            >
+              أرسل الرسالة
+            </button>
+          </form>
+
           {/* form end */}
           <div className="contact-links">
             <div className="contact-info">

@@ -262,10 +262,11 @@
 }
 @media (max-width: 575.98px) {
   .contact-sec2 .container {
+    height: fit-content;
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 5vh;
-    margin-bottom: 10vh;
+   
   }
   .contact-form {
     width: 100%;
