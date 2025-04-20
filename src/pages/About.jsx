@@ -77,14 +77,12 @@ export default function About() {
         </div>
       </section>
       <section className="about-sec3">
-        <div className="container">
-          <Join
-            title={"انضم إلى عائلة الماهرون"}
-            desc={
-              "ابدأ رحلتلك في حفظ القرآن الكريم وتعلم علومه مع نخبة من المعلمين المتميزين"
-            }
-          />
-        </div>
+        <Join
+          title={"انضم إلى عائلة الماهرون"}
+          desc={
+            "ابدأ رحلتلك في حفظ القرآن الكريم وتعلم علومه مع نخبة من المعلمين المتميزين"
+          }
+        />
       </section>
       <Footer />
     </>

@@ -52,8 +52,6 @@
   text-wrap: nowrap;
   background-color: var(--mainColor);
   padding: var(--mainPadding);
-  width: 80%;
-  height: 50%;
   color: var(--textColor5);
   font-weight: 600;
   border-radius: var(--border-radius);

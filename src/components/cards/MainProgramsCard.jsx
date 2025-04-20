@@ -15,7 +15,7 @@ export default function MainProgramsCard({
   const whatsAppURL = `https://wa.me/${phoneNumber}?text=${encodeMessage}`;
   const advantages = advantagesList.map((advantage, i) => (
     <li key={i}>
-      <FontAwesomeIcon className="icon" icon={faCircleCheck} />
+      <FontAwesomeIcon className="checked" icon={faCircleCheck} />
       <p>{advantage}</p>
     </li>
   ));
@@ -28,7 +28,7 @@ export default function MainProgramsCard({
       </div>
       <div className="advantages">
         <ul className="advantages-list">{advantages}</ul>
-        <Link to={whatsAppURL} target="_blank">
+        <Link className="btn" to={whatsAppURL} target="_blank">
           سجل الأن
         </Link>
       </div>

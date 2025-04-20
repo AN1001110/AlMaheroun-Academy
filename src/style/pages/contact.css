@@ -32,8 +32,7 @@
 }
 .contact-sec1 .icon {
   position: absolute;
-  bottom: 10vh;
-  font-size: 1.8rem;
+  bottom: 20%;
   font-weight: 600;
   color: var(--textColor4);
 }
@@ -43,15 +42,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 5vh auto;
   gap: 5vw;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-
-  width: 45vw;
+  width: 100%;
   background-color: var(--textColor5);
   padding: 5%;
   border-radius: 20px;
@@ -65,7 +63,6 @@
 .contact-form label {
   display: block;
   margin-bottom: 5px;
-  font-size: 1rem;
   color: var(--textColor4);
 }
 
@@ -76,7 +73,7 @@
   margin-bottom: 10px;
   border: 1px solid rgba(61, 203, 61, 0.5);
   border-radius: var(--border-radius);
-  font-size: 1rem;
+
   outline: none;
 
   color: rgb(51, 47, 47);
@@ -97,7 +94,6 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   -webkit-transition: all 0.2s ease-in-out;
@@ -117,7 +113,6 @@
 .err {
   color: rgb(194, 24, 24);
   font-weight: 700;
-  font-size: 0.8rem;
   background-color: rgb(161 235 170);
   padding: 5px;
   border-radius: var(--border-radius);
@@ -239,7 +234,6 @@
   margin-top: var(--mainPadding);
   display: flex;
   gap: 3vw;
-  font-size: 1.4rem;
 }
 .contact-sec2 .container .contact-links .follow-links .links a {
   transition: var(--transition);

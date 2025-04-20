@@ -26,7 +26,6 @@ header .header-container .logo {
   );
   background-clip: text;
   color: transparent;
-  font-size: 1.4rem;
   font-style: italic;
   font-weight: 900;
   padding: var(--mainPadding);

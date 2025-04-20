@@ -32,7 +32,6 @@
 
 .comment-card .icon {
   height: calc(100% / 4 - 15px);
-  font-size: 2.4rem;
   color: var(--textColor3);
   margin-bottom: 10px;
 }
