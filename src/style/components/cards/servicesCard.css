@@ -5,9 +5,8 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  width: 100%;
-  height: 150px;
-
+  width: 80%;
+  min-height: 200px;
   background-color: var(--bodyColor);
   gap: 15px;
   padding: var(--mainPadding);
@@ -49,9 +48,4 @@
   font-weight: 600;
 
   color: var(--textColor4);
-}
-@media (max-width: 575.98px) {
-  .services .service-card {
-    width: 70%;
-  }
 }
