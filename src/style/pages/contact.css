@@ -233,7 +233,7 @@
 .contact-sec2 .container .contact-links .follow-links .links {
   margin-top: var(--mainPadding);
   display: flex;
-  gap: 3vw;
+  gap: 10vw;
 }
 .contact-sec2 .container .contact-links .follow-links .links a {
   transition: var(--transition);
