@@ -1,5 +1,5 @@
 /* flip in animation for every section*/
-section .container {
+section  {
   animation: flipIn 0.8s ease-in-out;
   -webkit-animation: flipIn 0.8s ease-in-out;
 }
