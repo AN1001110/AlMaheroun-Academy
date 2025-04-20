@@ -8,6 +8,7 @@
   height: 90vh;
   background-image: url("../../assets/images/contactBackgroundImg.jpg");
   background-size: cover;
+
 }
 
 .programs-sec1 h1 {
@@ -23,7 +24,7 @@
   );
   background-clip: text;
   color: transparent;
-  text-wrap: nowrap;
+  text-wrap: wrap;
 }
 .programs-sec1 p {
   font-weight: 500;

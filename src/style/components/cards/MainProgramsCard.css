@@ -116,3 +116,9 @@
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
 }
+@media (max-width: 575.95px) {
+  .main-program-card  {
+    width: 80%;
+   
+  }
+}

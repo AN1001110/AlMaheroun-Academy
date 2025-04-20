@@ -109,12 +109,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="copy-right">
-          <p>
+          <span>
             <pre>
               جميع الحقوق محفوظة لأكاديمية الماهرون لتحفيظ القرآن الكريم{" "}
               {rightsDate}©
             </pre>
-          </p>
+          </span>
         </div>
       </div>
     </footer>
