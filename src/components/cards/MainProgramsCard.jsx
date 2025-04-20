@@ -10,7 +10,7 @@ export default function MainProgramsCard({
 }) {
   const phoneNumber = "201062084964";
   const encodeMessage = encodeURIComponent(
-    ` السلام عليكم ورحمة الله وبركاته \n  أريد الإستعلام عن تفاصيل برنامج ${title} \n وأريد معرفة طريقة الدفع `
+    ` السلام عليكم ورحمة الله وبركاته \n  أريد الإستعلام عن تفاصيل  ${title} \n وأريد معرفة طريقة الدفع `
   );
   const whatsAppURL = `https://wa.me/${phoneNumber}?text=${encodeMessage}`;
   const advantages = advantagesList.map((advantage, i) => (
