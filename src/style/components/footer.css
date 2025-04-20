@@ -20,7 +20,7 @@ footer .footer-container .footer-content {
 }
 
 footer .footer-container .footer-content .footer-list {
-  height: 25vh;
+  height: 15vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -68,13 +68,4 @@ footer .footer-container .copy-right {
 }
 footer .footer-container .copy-right pre {
   text-wrap: wrap;
-}
-
-@media (max-width: 575.95px) {
- 
-
-  footer .footer-container .footer-content .footer-list {
-    height: 15vh;
-  }
- 
 }
