@@ -19,100 +19,102 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-titles"></div>
           <div className="footer-list">
-            <h6>الماهرون</h6>
+            <p>الماهرون</p>
             <ul>
               <li>
-                <p>نحو تعليم قرآني متميز</p>
+                <span>نحو تعليم قرآني متميز</span>
               </li>
             </ul>
           </div>
           <div className="footer-list">
-            <h6>روابط سريعة</h6>
+            <p>روابط سريعة</p>
             <ul>
               <li>
                 <Link to="/">
-                  <p>الرئيسية</p>
+                  <span>الرئيسية</span>
                 </Link>
               </li>
               <li>
                 <Link to="/about">
-                  <p>عن الأكاديمية</p>
+                  <span>عن الأكاديمية</span>
                 </Link>
               </li>
               <li>
                 <Link to="/programs">
-                  <p>البرامج</p>
+                  <span>البرامج</span>
                 </Link>
               </li>
               <li>
                 <Link to="/contact">
-                  <p>التواصل</p>
+                  <span>التواصل</span>
                 </Link>
               </li>
             </ul>
           </div>
           <div className="footer-list">
-            <h6>تواصل معنا</h6>
+            <p>تواصل معنا</p>
             <ul>
               <li>
                 <Link to="https://wa.me/201062084964" target="_blank">
-                  <p>
+                  <span>
                     <FontAwesomeIcon icon={faPhone} />
-                  </p>
-                  <p>01062084964</p>
+                  </span>
+                  <span>01062084964</span>
                 </Link>
               </li>
               <li>
                 <Link to="mailto:almahroun@gmail.com">
-                  <p>
+                  <span>
                     <FontAwesomeIcon icon={faEnvelope} />
-                  </p>
-                  <p>almahroun@gmail.com</p>
+                  </span>
+                  <span>almahroun@gmail.com</span>
                 </Link>
               </li>
               <li>
-                <p>
+                <span>
                   <FontAwesomeIcon icon={faLocationDot} />
-                </p>
-                <p>الفيوم,مصر</p>
+                </span>
+                <span>الفيوم,مصر</span>
               </li>
             </ul>
           </div>
           <div className="footer-list">
-            <h6>تابعنا</h6>
+            <p>تابعنا</p>
             <ul>
               <li>
                 <Link
                   to="https://www.facebook.com/share/1JkZPR9p89/"
                   target="_blank"
                 >
-                  <p>
+                  <span>
                     <FontAwesomeIcon icon={faFacebook} />
-                  </p>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link to="https://t.me/Al_maheron" target="_blank">
-                  <p>
+                  <span>
                     <FontAwesomeIcon icon={faTelegram} />
-                  </p>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link to="https://wa.me/201062084964" target="_blank">
-                  <p>
+                  <span>
                     <FontAwesomeIcon icon={faWhatsapp} />
-                  </p>
+                  </span>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="copy-right">
-          <pre>
-            جميع الحقوق محفوظة لأكاديمية الماهرون لتحفيظ القرآن الكريم{" "}
-            {rightsDate}©
-          </pre>
+          <p>
+            <pre>
+              جميع الحقوق محفوظة لأكاديمية الماهرون لتحفيظ القرآن الكريم{" "}
+              {rightsDate}©
+            </pre>
+          </p>
         </div>
       </div>
     </footer>

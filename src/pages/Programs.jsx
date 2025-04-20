@@ -111,14 +111,12 @@ export default function Programs() {
     <>
       <Header />
       <section className="programs-sec1">
-     
-          <h1>برامج تحفيظ القرآن الكريم وغيرها</h1>
-          <p>
-            اكتشف برامجنا المتميزة في تحفيظ وتجويد القرآن الكريم بالإضافة برنامج
-            القراءة و الكتابة على أيدي نخبة من المعلمين المتخصصين
-          </p>
-          <FontAwesomeIcon className="icon arrow" icon={faArrowDownLong} />
-      
+        <h1>برامج تحفيظ القرآن الكريم وغيرها</h1>
+        <p>
+          اكتشف برامجنا المتميزة في تحفيظ وتجويد القرآن الكريم بالإضافة برنامج
+          القراءة و الكتابة على أيدي نخبة من المعلمين المتخصصين
+        </p>
+        <FontAwesomeIcon className="icon arrow" icon={faArrowDownLong} />
       </section>
       <section className="programs-sec2">
         <div className="container">

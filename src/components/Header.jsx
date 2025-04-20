@@ -69,7 +69,7 @@ export default function Header() {
             </li>
             <li>
               <NavLink to="/programs">
-                <span className="btn">ابدأ الأن</span>
+                <span className="link">ابدأ الأن</span>
               </NavLink>
             </li>
           </ul>

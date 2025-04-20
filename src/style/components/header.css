@@ -71,7 +71,7 @@ header .header-container ul li a {
 
 header .header-container ul li a span {
   display: block;
-  font-size: 1rem;
+
   font-weight: 600;
   margin-left: 5px;
   color: var(--textColor5);
@@ -83,7 +83,7 @@ header .header-container ul li:not(:last-child) a span {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
 }
-header .header-container ul li:not(:last-child) a span:hover {
+header .header-container ul li:not(:last-child) a p:hover {
   background-image: linear-gradient(
     45deg,
     var(--logoColor2),
@@ -97,7 +97,7 @@ header .header-container ul li:not(:last-child) a span:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-header .header-container ul li a .btn {
+header .header-container ul li a .link {
   transition: all 0.1s ease-out;
   background-color: var(--btnColor);
   padding: 10px var(--mainPadding);
@@ -111,7 +111,7 @@ header .header-container ul li a .btn {
   -ms-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
 }
-header .header-container ul li a .btn:hover {
+header .header-container ul li a .link:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -122,13 +122,9 @@ header .header-container ul li a .btn:hover {
 /* responsive */
 @media (min-width: 320px) and (max-width: 767px),
   (max-width: 992px) and (orientation: landscape) {
-  header .header-container .logo {
-    font-size: 1.2rem;
-  }
   header .header-container .bar {
     display: block;
     position: absolute;
-    font-size: 1rem;
     font-weight: bold;
     left: 5%;
     top: 30%;
@@ -164,33 +160,6 @@ header .header-container ul li a .btn:hover {
   header .header-container ul li:not(:last-child) {
     border-bottom: 2px solid var(--logoColor2);
   }
-
-  header .header-container ul li a span {
-    font-size: 0.7rem;
-  }
 }
 
 /* الأنماط الأساسية للهواتف الذكية الصغيرة (<576px) */
-
-@media (max-width: 575.95px) {
-}
-
-/* الهواتف الذكية المتوسطة (576px وأكبر) */
-@media (min-width: 576px) {
-}
-
-/* الأجهزة اللوحية (768px وأكبر) */
-@media (min-width: 768px) {
-}
-
-/* أجهزة الكمبيوتر المحمولة (992px وأكبر) */
-@media (min-width: 992px) {
-}
-
-/* أجهزة الكمبيوتر المكتبية (1200px وأكبر) */
-@media (min-width: 1200px) {
-}
-
-/* الشاشات الكبيرة جدًا (1400px وأكبر) */
-@media (min-width: 1400px) {
-}
