@@ -4,8 +4,10 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 export default function CommentCard({ name, comment }) {
   return (
     <div className="comment-card card">
-      <FontAwesomeIcon icon={faUser} className="icon" />
-      <h4>{name}</h4>
+      <div className="title">
+        <FontAwesomeIcon icon={faUser} className="icon" />
+        <h4>{name}</h4>
+      </div>
       <p>{comment}</p>
     </div>
   );
