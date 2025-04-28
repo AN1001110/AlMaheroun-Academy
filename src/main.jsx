@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
 // ? fonts
 import "./assets/fonts/fonts.css";
-//  fonts end 
+//  fonts end
 // normalize library
 import "./style/assets/normalize.css";
 //  global  variables
@@ -14,12 +14,15 @@ import "./style/assets/animations.css";
 //  global css
 import "./index.css";
 // responsive  design
-import "./style/assets/responsive.css"
+import "./style/assets/responsive.css";
+// Vercel  Analytics
+import { Analytics } from "@vercel/analytics/react";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <StrictMode>
       <App />
+      <Analytics />
     </StrictMode>
   </BrowserRouter>
 );
