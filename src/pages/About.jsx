@@ -13,7 +13,6 @@ import { useLayoutEffect } from "react";
 export default function About() {
   useLayoutEffect(() => {
     document.title = "عن الأكاديمية";
-    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
   // services
   const services = [

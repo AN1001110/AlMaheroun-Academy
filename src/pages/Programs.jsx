@@ -20,7 +20,6 @@ import { useLayoutEffect } from "react";
 export default function Programs() {
   useLayoutEffect(() => {
     document.title = "البرامح";
-    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
   const programs = [
     [

@@ -28,7 +28,6 @@ import { useLayoutEffect } from "react";
 export default function Home() {
   useLayoutEffect(() => {
     document.title = "أكاديمية الماهرون";
-    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
   const services = [
     [
@@ -100,7 +99,7 @@ export default function Home() {
     autoplaySpeed: 3000, // سرعة التمرير التلقائي
     cssEase: "ease-in-out", // تأثير التمرير
     rtl: true, // دعم الاتجاه من اليمين لليسار
-    
+
     responsive: [
       {
         breakpoint: 1024, // عند عرض الشاشة أقل من 1024px
@@ -176,7 +175,7 @@ export default function Home() {
         <div className="container">
           <h2>أراء الطلاب في الأكاديمية </h2>
           <div className="comments">
-            <Slider { ...settings}>{commentsCards}</Slider>
+            <Slider {...settings}>{commentsCards}</Slider>
           </div>
         </div>
       </section>

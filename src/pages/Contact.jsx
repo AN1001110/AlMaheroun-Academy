@@ -18,7 +18,6 @@ import { useLayoutEffect, useState } from "react";
 export default function Contact() {
   useLayoutEffect(() => {
     document.title = "التواصل";
-    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
   const [form, setForm] = useState({
     name: "",

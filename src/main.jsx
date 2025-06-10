@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
+import ScrollToTop from "./components/ScrollToTop";
 // ? fonts
 import "./assets/fonts/fonts.css";
 //  fonts end
@@ -21,6 +22,7 @@ import { Analytics } from "@vercel/analytics/react";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <StrictMode>
+      <ScrollToTop />
       <App />
       <Analytics />
     </StrictMode>
