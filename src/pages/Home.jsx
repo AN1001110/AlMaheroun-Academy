@@ -27,7 +27,7 @@ import Join from "../components/Join";
 import { useLayoutEffect } from "react";
 export default function Home() {
   useLayoutEffect(() => {
-    document.title = "AlMaheroun Academy";
+    document.title = "أكاديمية الماهرون";
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
   const services = [
