@@ -55,7 +55,7 @@ export default function Footer() {
             <p>تواصل معنا</p>
             <ul>
               <li>
-                <Link to="https://wa.me/201062084964" target="_blank">
+                <Link to="https://wa.me/201117493384" target="_blank">
                   <span>
                     <FontAwesomeIcon icon={faPhone} />
                   </span>
@@ -99,7 +99,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="https://wa.me/201062084964" target="_blank">
+                <Link to="https://wa.me/201117493384" target="_blank">
                   <span>
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </span>

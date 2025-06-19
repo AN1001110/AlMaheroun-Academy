@@ -8,7 +8,7 @@ export default function MainProgramsCard({
   desc,
   advantagesList,
 }) {
-  const phoneNumber = "201062084964";
+  const phoneNumber = "201117493384";
   const encodeMessage = encodeURIComponent(
     ` السلام عليكم ورحمة الله وبركاته \n  أريد الإستعلام عن تفاصيل  ${title} \n وأريد معرفة طريقة الدفع `
   );

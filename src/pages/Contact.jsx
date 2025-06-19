@@ -48,7 +48,7 @@ export default function Contact() {
             form.phone.length === 11 &&
             form.message.length > 0
         );
-        const phoneNumber = "201062084964";
+        const phoneNumber = "201117493384";
         const encodeMessage = encodeURIComponent(
           `الاسم : ${form.name} , \n رقم التواصل : ${form.phone} ,\n ${
             form.email.length > 1
@@ -148,7 +148,7 @@ export default function Contact() {
               <div className="links">
                 <Link
                   className="link"
-                  to="https://wa.me/201062084964"
+                  to="https://wa.me/201117493384"
                   target="_blank"
                 >
                   <p>
@@ -176,7 +176,7 @@ export default function Contact() {
               <div className="contact-fast-links">
                 <Link
                   className="btn"
-                  to="https://wa.me/201062084964"
+                  to="https://wa.me/201117493384"
                   target="_blank"
                 >
                   <p>
@@ -214,7 +214,7 @@ export default function Contact() {
                   </p>
                 </Link>
 
-                <Link to="https://wa.me/201062084964" target="_blank">
+                <Link to="https://wa.me/201117493384" target="_blank">
                   <p>
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </p>
