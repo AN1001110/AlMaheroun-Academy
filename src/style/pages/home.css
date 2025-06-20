@@ -56,7 +56,6 @@
   aspect-ratio: 16 / 6;
   padding: 5px 10px;
   min-width: 15vw;
-
   color: var(--textColor5);
   font-weight: 700;
   border-radius: var(--border-radius);
@@ -215,10 +214,7 @@
   justify-content: center;
 }
 
-/* sec5 */
-.home-sec5 .container {
-  padding: 0;
-}
+
 
 /* responsive  */
 @media (max-width: 575.98px) {

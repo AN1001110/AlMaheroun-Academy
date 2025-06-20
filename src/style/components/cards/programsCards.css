@@ -2,7 +2,10 @@
   transition: var(--transition);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
+  min-height: 400px;
+  max-height: 500px;
+  width: 100%;
   flex-direction: column;
   background-color: var(--bodyColor);
   border-radius: 10px;
@@ -14,9 +17,7 @@
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
-  width: 100%;
-  aspect-ratio: 12 / 16;
-  overflow: hidden;
+
   box-shadow: 0 0 10px 0 var(--textColor2);
 }
 .programs .program-card:hover {
@@ -30,26 +31,24 @@
 
 .programs .program-card .main-img {
   width: 100%;
-  height: 50%;
+  height: 300px;
+  overflow: hidden;
 }
 .programs .program-card .main-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .programs .program-card .main-desc {
-  flex: 1;
-  padding: 2vw;
+  padding: 0 10px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
-  gap: 15px;
-  height: fit-content;
-  padding-bottom: 20px;
-  width: 100%;
+  gap: 2vw;
 }
 .programs .program-card .main-desc h4 {
-  padding: 2vw;
+  padding: 2px;
   font-weight: 700;
   background-image: linear-gradient(
     45deg,
@@ -66,7 +65,7 @@
   color: var(--textColor4);
 }
 
-.programs .program-card .main-desc a {
+.programs .program-card a {
   transition: all 0.1s ease-out;
   background-color: var(--btnColor);
   padding: 10px var(--mainPadding);
@@ -81,10 +80,5 @@
   -o-transition: all 0.1s ease-out;
   color: var(--textColor5);
   width: 80%;
-}
-
-@media (max-width: 575.95px) {
-  .programs .program-card {
-    width: 84%;
-  }
+  margin-bottom: 10%;
 }

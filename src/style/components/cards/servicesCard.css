@@ -6,7 +6,7 @@
   flex-direction: column;
   text-align: center;
   width: 100%;
-  aspect-ratio: 16 / 9;
+ height: 100%;
   padding: 10px;
   background-color: var(--bodyColor);
   gap: 15px;
@@ -51,9 +51,4 @@
   color: var(--textColor4);
 }
 
-/* responsive  */
-@media (max-width: 767.98px) {
-  .services .service-card {
-    width: 75%;
-  }
-}
+

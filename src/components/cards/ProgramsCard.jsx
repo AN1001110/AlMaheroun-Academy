@@ -9,8 +9,8 @@ export default function programsCard({ img, title, desc }) {
       <div className="main-desc">
         <h4>{title}</h4>
         <p>{desc}</p>
-        <Link to={"/programs"}>التفاصيل</Link>
       </div>
+      <Link to={"/programs"}>التفاصيل</Link>
     </div>
   );
 }
