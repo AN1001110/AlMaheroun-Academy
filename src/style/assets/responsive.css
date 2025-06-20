@@ -37,7 +37,7 @@ p {
   font-size: 1.5rem;
 }
 span {
-  font-size: 0.75rem;
+  font-size: 1.125rem;
 }
 
 /* الصورة الرئيسية */
@@ -79,7 +79,7 @@ span {
     font-size: 1.25rem;
   }
   span {
-    font-size: 0.625rem;
+    font-size: 0.938rem;
   }
   .hero-image {
     height: 70vh;
@@ -119,7 +119,7 @@ span {
     font-size: 1.15rem;
   }
   span {
-    font-size: 0.575rem;
+    font-size: 0.865rem;
   }
   .hero-image {
     height: 60vh;
@@ -159,7 +159,7 @@ span {
     font-size: 1.1rem;
   }
   span {
-    font-size: 0.55rem;
+    font-size: 0.83rem;
   }
   .hero-image {
     height: 50vh;
@@ -199,7 +199,7 @@ span {
     font-size: 1rem;
   }
   span {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
   .hero-image {
     height: 40vh;
@@ -239,7 +239,7 @@ span {
     font-size: 0.9rem;
   }
   span {
-    font-size: 0.45rem;
+    font-size: 0.68rem;
   }
   .hero-image {
     height: 30vh;

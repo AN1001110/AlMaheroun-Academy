@@ -10,23 +10,25 @@ export default function Header() {
   const [screenOrientation, setScreenOrientation] = useState(
     window.screen.orientation.type
   );
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       setScreenSize(window.innerWidth);
       setScreenOrientation(window.screen.orientation.type);
     });
   }, [screenSize, screenOrientation]);
+
   return (
     <header>
       <div className="header-container">
         <Link to="/" className="logo">
-          الماهرون
+          <h5>الماهرون</h5>
         </Link>
         <div>
           <div
             className="bar"
             onClick={() => {
-              setShow((ele) => !ele);
+              setShow((prev) => !prev);
             }}
           >
             <FontAwesomeIcon icon={faBars} />
@@ -60,6 +62,11 @@ export default function Header() {
             <li>
               <NavLink to="/programs">
                 <span>البرامج</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/teachers">
+                <span>المعلمون</span>
               </NavLink>
             </li>
             <li>

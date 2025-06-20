@@ -7,11 +7,11 @@
   height: 350px;
   background-color: var(--bodyColor);
   padding: var(--mainPadding);
-  border-radius: 5px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
   box-shadow: 0 0 1px 1px var(--textColor2);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -33,7 +33,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
 }
 .comment-card .icon {
   color: var(--textColor3);
@@ -58,8 +57,18 @@
   font-weight: 600;
   color: var(--textColor4);
 }
+@media (max-width: 767.95px) {
+  .comment-card {
+   
+    width: 100%;
+    height: 250px;
+  }
+}
+
 @media (max-width: 575.95px) {
   .comment-card {
-  height: 270px;
+    
+    width: 75%;
+    height: 300px;
   }
 }

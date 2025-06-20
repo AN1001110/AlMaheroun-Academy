@@ -14,11 +14,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../style/pages/contact.css";
 import { Link, useNavigate } from "react-router";
-import { useLayoutEffect, useState } from "react";
+import { useState } from "react";
 export default function Contact() {
-  useLayoutEffect(() => {
-    document.title = "التواصل";
-  }, []);
+ 
   const [form, setForm] = useState({
     name: "",
     email: "",

@@ -15,12 +15,8 @@ import Header from "../components/Header";
 import "../style/pages/programs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MainProgramsCard from "../components/cards/MainProgramsCard";
-import { useLayoutEffect } from "react";
 
 export default function Programs() {
-  useLayoutEffect(() => {
-    document.title = "البرامح";
-  }, []);
   const programs = [
     [
       faBookQuran,

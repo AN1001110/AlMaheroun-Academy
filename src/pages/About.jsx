@@ -9,11 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ServicesCard from "../components/cards/ServicesCard";
 import Join from "../components/Join";
-import { useLayoutEffect } from "react";
+
 export default function About() {
-  useLayoutEffect(() => {
-    document.title = "عن الأكاديمية";
-  }, []);
   // services
   const services = [
     [

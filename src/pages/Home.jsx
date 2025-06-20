@@ -24,11 +24,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // slider end
 import Join from "../components/Join";
-import { useLayoutEffect } from "react";
+
 export default function Home() {
-  useLayoutEffect(() => {
-    document.title = "أكاديمية الماهرون";
-  }, []);
   const services = [
     [
       faUserGraduate,

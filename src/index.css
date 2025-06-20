@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-family: Amiri, Rubik, Arial, Helvetica, sans-serif;
+  font-family:   sans-serif,Arial, Helvetica;
   padding-top: 10vh;
   background-color: var(--bodyColor);
 }

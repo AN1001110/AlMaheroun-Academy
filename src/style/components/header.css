@@ -15,7 +15,6 @@ header .header-container {
 }
 
 header .header-container .logo {
-  transition: all 0.1s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,18 +30,8 @@ header .header-container .logo {
   padding: var(--mainPadding);
   width: fit-content;
   height: fit-content;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
 }
-header .header-container .logo:hover {
-  transform: skew(-15deg);
-  -webkit-transform: skew(-15deg);
-  -moz-transform: skew(-15deg);
-  -ms-transform: skew(-15deg);
-  -o-transform: skew(-15deg);
-}
+
 header .header-container .bar {
   color: var(--textColor4);
   display: none;
@@ -77,13 +66,14 @@ header .header-container ul li a span {
   color: var(--textColor5);
 }
 header .header-container ul li:not(:last-child) a span {
+  padding: 2px;
   transition: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
 }
-header .header-container ul li:not(:last-child) a p:hover {
+header .header-container ul li:not(:last-child) a span:hover {
   background-image: linear-gradient(
     45deg,
     var(--logoColor2),
@@ -131,7 +121,8 @@ header .header-container ul li a .link:hover {
     top: 30%;
   }
   header .header-container ul {
-    transition: all 0.8s ease;
+    animation: soothShow 0.5s ease-in-out;
+
     width: 30%;
     padding: 0;
     flex-direction: column;
@@ -146,6 +137,8 @@ header .header-container ul li a .link:hover {
     gap: 0;
     border-bottom: 2px solid var(--textColor2);
     box-shadow: 0 0 5px 1px var(--textColor2);
+
+    -webkit-animation: soothShow 0.5s ease-in-out;
   }
 
   header .header-container ul li {

@@ -2,9 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
-import ScrollToTop from "./components/ScrollToTop";
-// ? fonts
-import "./assets/fonts/fonts.css";
+import HandlePages from "./components/HandlePages";
 //  fonts end
 // normalize library
 import "./style/assets/normalize.css";
@@ -22,7 +20,7 @@ import { Analytics } from "@vercel/analytics/react";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <StrictMode>
-      <ScrollToTop />
+      <HandlePages />
       <App />
       <Analytics />
     </StrictMode>

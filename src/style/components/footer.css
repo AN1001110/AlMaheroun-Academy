@@ -12,18 +12,19 @@ footer .footer-container {
 }
 footer .footer-container .footer-content {
   width: 80%;
-  height: fit-content;
+  height: 30vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 50px;
+
 }
 
 footer .footer-container .footer-content .footer-list {
   height: 15vh;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  margin-left: 10px;
 }
 footer .footer-container .footer-content .footer-list p {
   font-weight: 700;
