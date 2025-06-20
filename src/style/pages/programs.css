@@ -58,6 +58,7 @@
   background-clip: text;
   color: transparent;
   text-wrap: nowrap;
+  margin-bottom: 10vh;
 }
 
 .programs-sec2 .container .programs {

@@ -17,7 +17,6 @@ footer .footer-container .footer-content {
   justify-content: space-between;
   align-items: center;
   margin: 50px;
-
 }
 
 footer .footer-container .footer-content .footer-list {
@@ -47,10 +46,22 @@ footer .footer-container .footer-content .footer-list ul li {
   width: 100%;
 }
 footer .footer-container .footer-content .footer-list ul li a {
+  transition: all 0.1s linear;
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+}
+footer .footer-container .footer-content .footer-list ul li a:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 footer .footer-container .footer-content .footer-list span {

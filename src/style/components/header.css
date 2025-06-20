@@ -81,14 +81,14 @@ header .header-container ul li:not(:last-child) a span:hover {
   );
   background-clip: text;
   color: transparent;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 header .header-container ul li a .link {
-  transition: all 0.1s ease-out;
+  transition: all 0.2s ease;
   background-color: var(--btnColor);
   padding: 10px var(--mainPadding);
   border-radius: var(--border-radius);
@@ -96,10 +96,10 @@ header .header-container ul li a .link {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
-  -webkit-transition: all 0.1s ease-out;
-  -moz-transition: all 0.1s ease-out;
-  -ms-transition: all 0.1s ease-out;
-  -o-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 header .header-container ul li a .link:hover {
   transform: scale(1.05);
