@@ -4,7 +4,7 @@ export default function ServicesCard({ icon, title, desc }) {
   return (
     <div className="service-card card">
       <FontAwesomeIcon icon={icon} className="icon" />
-      <h4>{title}</h4>
+      <h5>{title}</h5>
       <p>{desc}</p>
     </div>
   );

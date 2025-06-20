@@ -7,7 +7,7 @@ export default function programsCard({ img, title, desc }) {
         <img src={img} alt="Not Found" />
       </div>
       <div className="main-desc">
-        <h4>{title}</h4>
+        <h5>{title}</h5>
         <p>{desc}</p>
       </div>
       <Link to={"/programs"}>التفاصيل</Link>

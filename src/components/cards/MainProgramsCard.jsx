@@ -23,7 +23,7 @@ export default function MainProgramsCard({
     <div className="main-program-card card">
       <div className="card-title">
         <FontAwesomeIcon className="icon" icon={icon} />
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         <p>{desc}</p>
       </div>
       <div className="advantages">
