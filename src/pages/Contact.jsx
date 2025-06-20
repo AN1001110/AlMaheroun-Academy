@@ -142,7 +142,7 @@ export default function Contact() {
           {/* form end */}
           <div className="contact-links">
             <div className="contact-info">
-              <h4>تواصل معنا</h4>
+              <h5>تواصل معنا</h5>
               <div className="links">
                 <Link
                   className="link"
@@ -170,7 +170,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="contact-fast">
-              <h4>تواصل معنا مباشرة</h4>
+              <h5>تواصل معنا مباشرة</h5>
               <div className="contact-fast-links">
                 <Link
                   className="btn"
@@ -195,7 +195,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="follow-links">
-              <h4>تابعونا على </h4>
+              <h5>تابعونا على </h5>
               <div className="links">
                 <Link
                   to="https://www.facebook.com/share/1JkZPR9p89/"

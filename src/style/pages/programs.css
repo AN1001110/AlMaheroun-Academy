@@ -82,6 +82,7 @@
   gap: 5vh;
 }
 .programs-sec3 .container h2 {
+  padding: 5px;
   background-image: linear-gradient(
     45deg,
     var(--textColor2),
@@ -125,7 +126,8 @@
   color: var(--logoColor1);
 }
 
-.programs-sec3 .container .skills .skills-container h3 {
+.programs-sec3 .container .skills .skills-container h5 {
+  padding: 5px;
   font-weight: 700;
   background-image: linear-gradient(
     45deg,

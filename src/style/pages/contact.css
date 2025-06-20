@@ -147,7 +147,7 @@
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
 }
-.contact-sec2 .container .contact-links h4 {
+.contact-sec2 .container .contact-links h5 {
   font-weight: 900;
   background-image: linear-gradient(
     45deg,

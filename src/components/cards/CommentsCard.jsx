@@ -6,7 +6,7 @@ export default function CommentCard({ name, comment }) {
     <div className="comment-card card">
       <div className="title">
         <FontAwesomeIcon icon={faUser} className="icon" />
-        <h4>{name}</h4>
+        <h5>{name}</h5>
       </div>
       <p>{comment}</p>
     </div>
