@@ -14,7 +14,7 @@
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
-  width: 90%;
+  width: 100%;
   aspect-ratio: 12 / 16;
   overflow: hidden;
   box-shadow: 0 0 10px 0 var(--textColor2);
@@ -37,9 +37,11 @@
   height: 100%;
 }
 .programs .program-card .main-desc {
+  flex: 1;
+  padding: 2vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   gap: 15px;
   height: fit-content;
@@ -47,6 +49,7 @@
   width: 100%;
 }
 .programs .program-card .main-desc h4 {
+  padding: 2vw;
   font-weight: 700;
   background-image: linear-gradient(
     45deg,
