@@ -30,7 +30,7 @@ export default function Teachers() {
         <div className="icon-bg">
           <FontAwesomeIcon className="icon" icon={skill[0]} />
         </div>
-        <h3>{skill[1]}</h3>
+        <h5>{skill[1]}</h5>
         <p>{skill[2]}</p>
       </div>
     );

@@ -20,11 +20,11 @@ export default function MainProgramsCard({
     </li>
   ));
   return (
-    <div className="main-program-card card">
+    <div className="main-program-card ">
       <div className="card-title">
         <FontAwesomeIcon className="icon" icon={icon} />
         <h5>{title}</h5>
-        <h6>{desc}</h6>
+        <p>{desc}</p>
       </div>
       <div className="advantages">
         <ul className="advantages-list">{advantages}</ul>

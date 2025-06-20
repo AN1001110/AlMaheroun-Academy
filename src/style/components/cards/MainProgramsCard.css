@@ -1,12 +1,15 @@
 .main-program-card {
+  line-height: 1;
   transition: var(--transition);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
-  padding: 40px var(--mainPadding);
+  padding: var(--mainPadding);
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 30rem;
+
+  gap: 2rem;
   box-shadow: 0 0 3px 1px var(--logoColor1);
   border-radius: var(--border-radius);
   -webkit-border-radius: var(--border-radius);
@@ -21,20 +24,24 @@
 }
 .main-program-card:hover {
   box-shadow: 0 0 5px 2px var(--logoColor1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 .main-program-card .card-title {
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
-  height: fit-content;
+  gap: 1.6rem;
 }
 .main-program-card .card-title .icon {
   color: var(--logoColor1);
 }
 .main-program-card .card-title h5 {
-  padding: 5px;
   position: relative;
   font-weight: 700;
   background-image: linear-gradient(
@@ -56,16 +63,15 @@
   height: 2px;
 }
 
-.main-program-card .card-title h6 {
-  margin-top: 15px;
-  font-weight: 600;
+.main-program-card .card-title p {
+  font-weight: 400;
   color: var(--textColor4);
+  line-height: 1.4;
 }
 
 .main-program-card .advantages {
   display: flex;
   justify-content: center;
-  padding: var(--mainPadding);
   flex-direction: column;
   height: fit-content;
   width: 100%;
@@ -75,12 +81,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom:2rem;
 }
 .main-program-card .advantages .advantages-list li {
   display: flex;
+  align-items: center;
   gap: 5px;
   width: 100%;
 }
@@ -88,14 +95,15 @@
   color: var(--textColor3);
 }
 .main-program-card .advantages .advantages-list li p {
-  color: var(--textColor3);
+  color: var(--textColor2);
+  font-weight: 400;
 }
 
 .main-program-card .advantages a {
+  transition: all 0.2s linear;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease-in-out;
   padding: 10px var(--mainPadding);
   background-image: linear-gradient(
     45deg,
@@ -109,6 +117,10 @@
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
 }
 .main-program-card .advantages a:hover {
   transform: scale(1.05);
@@ -117,16 +129,19 @@
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
 }
-@media (max-width: 575.95px) {
-  .main-program-card  {
-    width: 80%;
-   
+@media (max-width: 767.98px) {
+  .main-program-card {
+    height: 25rem;
+    width: 60%;
   }
 }
 
-@media (max-width: 767.95px) {
-  .main-program-card  {
-    width: 70%;
-   
+/* الهواتف الذكية الصغيرة (<576px) */
+@media (max-width: 575.98px) {
+  .main-program-card {
+    height: 26rem;
+    
+    width: 75%;
   }
 }
+

@@ -171,11 +171,13 @@
 /* sec3 */
 .home-sec3 .container {
   background-color: var(--bodyColor);
+ 
 }
 
 .home-sec3 .container .programs {
   margin-top: 40px;
   width: 100%;
+
   display: grid;
   justify-items: center;
   text-align: center;
@@ -213,8 +215,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 /* responsive  */
 @media (max-width: 575.98px) {

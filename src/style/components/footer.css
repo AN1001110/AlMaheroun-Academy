@@ -5,7 +5,7 @@ footer .footer-container {
   flex-direction: column;
   width: 100%;
   background-color: var(--mainColor);
-  gap: 5%;
+  gap: 5vh;
   color: var(--textColor5);
   padding-bottom: 0;
   border-top: 1px solid var(--textColor5);

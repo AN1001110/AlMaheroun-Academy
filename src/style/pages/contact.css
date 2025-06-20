@@ -115,7 +115,7 @@
   color: rgb(194, 24, 24);
   font-weight: 700;
   background-color: rgb(161 235 170);
-  padding: 5px;
+
   border-radius: var(--border-radius);
   -webkit-border-radius: var(--border-radius);
   -moz-border-radius: var(--border-radius);

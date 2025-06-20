@@ -68,7 +68,7 @@
   justify-items: center;
   align-items: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
 }
 
@@ -82,7 +82,6 @@
   gap: 5vh;
 }
 .programs-sec3 .container h2 {
-  padding: 5px;
   background-image: linear-gradient(
     45deg,
     var(--textColor2),
@@ -101,7 +100,7 @@
   text-align: center;
   align-items: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
   gap: 40px;
 }
 
@@ -127,7 +126,6 @@
 }
 
 .programs-sec3 .container .skills .skills-container h5 {
-  padding: 5px;
   font-weight: 700;
   background-image: linear-gradient(
     45deg,
